@@ -1,0 +1,34 @@
+// header top bar
+.top-search-form {
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+        border-color: var(--base-skin) !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .top-search-form {
+        max-width: 720px;
+    }
+}
+
+.top-search-form i {
+    padding: 5px 15px;
+    color: var(--body-color);
+}
+
+.top-search-form input {
+    border: none !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-search-form input:focus {
+    box-shadow: none;
+}
+
+.search-icon-voice {
+    border-left: 2px solid var(--base-border);
+}

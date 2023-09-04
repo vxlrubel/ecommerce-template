@@ -1,0 +1,137 @@
+.header-area {
+    a {
+        text-decoration: none;
+        color: var(--body-color);
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--base-skin);
+        }
+    }
+}
+
+.logo {
+    max-width: 120px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.navbar-parent {
+    width: 100%;
+
+    .menu {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    @media(min-width: 992px) {
+        .menu {
+            display: flex;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            >li:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            >li>a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .mega-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -300px;
+                right: -300px;
+                background-color: var(--base-white);
+                z-index: 9999;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                animation: submenuFadeIn 0.1s ease-in;
+
+
+                [class*="col-"] {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+
+            >li:hover>.mega-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+.navbar-last-items {
+    width: auto;
+
+    * {
+        display: inline-flex;
+    }
+
+    i,
+    span {
+        margin-left: 10px;
+    }
+
+    img {
+        max-width: 16px;
+        ;
+    }
+}
+
+.mega-menu a {
+    text-transform: capitalize;
+}
+
+
+.mega-menu-has-image {
+    position: relative;
+
+    >div {
+
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        animation: submenuFadeIn 0.1s ease-in;
+
+        a {
+            color: var(--base-white);
+        }
+    }
+
+    &:hover div {
+        display: inline-flex;
+    }
+}
+
+@keyframes submenuFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

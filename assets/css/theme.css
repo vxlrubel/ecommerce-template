@@ -1,0 +1,50 @@
+@import url('satoshi.css');
+
+:root {
+    --base-skin-alpha: #F6F1EA;
+    --base-skin: #bc8b57;
+    --base-skin-deep: #a77743;
+    --body-color: #2b2826;
+    --base-white: #ffffff;
+    --base-light: #f8f9fa;
+    --base-border: #dee2e6;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satoshi-LightItalic', sans-serif;
+}
+
+.radius-sm {
+    border-radius: 10px !important;
+}
+
+.radius {
+    border-radius: 15px !important;
+}
+
+.radius-lg {
+    border-radius: 20px !important;
+}
+
+.radius-xl {
+    border-radius: 25px !important;
+}

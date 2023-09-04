@@ -1,0 +1,146 @@
+.top-search-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-search-form:hover {
+  border-color: var(--base-skin) !important;
+}
+
+@media (min-width: 768px) {
+  .top-search-form {
+    max-width: 720px;
+  }
+}
+.top-search-form i {
+  padding: 5px 15px;
+  color: var(--body-color);
+}
+
+.top-search-form input {
+  border: none !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-search-form input:focus {
+  box-shadow: none;
+}
+
+.search-icon-voice {
+  border-left: 2px solid var(--base-border);
+}
+
+.header-area a {
+  text-decoration: none;
+  color: var(--body-color);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header-area a:hover {
+  color: var(--base-skin);
+}
+
+.logo {
+  max-width: 120px;
+}
+.logo img {
+  max-width: 100%;
+}
+
+.navbar-parent {
+  width: 100%;
+}
+.navbar-parent .menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-parent .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .navbar-parent .menu {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-parent .menu > li:not(:last-child) {
+    margin-right: 15px;
+  }
+  .navbar-parent .menu > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .navbar-parent .menu .mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    right: -300px;
+    background-color: var(--base-white);
+    z-index: 9999;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    animation: submenuFadeIn 0.1s ease-in;
+  }
+  .navbar-parent .menu .mega-menu [class*=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-parent .menu > li:hover > .mega-menu {
+    display: block;
+  }
+}
+
+.navbar-last-items {
+  width: auto;
+}
+.navbar-last-items * {
+  display: inline-flex;
+}
+.navbar-last-items i,
+.navbar-last-items span {
+  margin-left: 10px;
+}
+.navbar-last-items img {
+  max-width: 16px;
+}
+
+.mega-menu a {
+  text-transform: capitalize;
+}
+
+.mega-menu-has-image {
+  position: relative;
+}
+.mega-menu-has-image > div {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: submenuFadeIn 0.1s ease-in;
+}
+.mega-menu-has-image > div a {
+  color: var(--base-white);
+}
+.mega-menu-has-image:hover div {
+  display: inline-flex;
+}
+
+@keyframes submenuFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
