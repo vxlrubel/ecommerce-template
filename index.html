@@ -22,7 +22,7 @@
 <body>
 
     <div class="clearfix header-area">
-        <div class="container header-top">
+        <div class="container header-top pt-3">
             <div class="row">
                 <div class="col-12" class="search-form">
                     <form action="#">
@@ -373,7 +373,10 @@
                                     </div>
                                 </li>
                                 <li><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
-                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                                <li class="position-relative">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <label class="shopping-cart-count">11</label>
+                                </li>
                                 <li><i class="fa-solid fa-truck"></i></li>
                                 <li class="d-lg-none">
                                     <button type="button" class="menu-toggle">
@@ -385,6 +388,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="container d-lg-none">
+            <div id="mobile-menu"></div>
         </div>
     </div>
 
