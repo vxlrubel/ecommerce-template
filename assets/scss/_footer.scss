@@ -1,4 +1,19 @@
 .footer-area {
+    .whats-app {
+        position: fixed;
+        display: inline-flex;
+        height: 48px;
+        width: 48px;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: var(--base-white) !important;
+        border-radius: 50%;
+        background: #16BE45;
+        bottom: 80px;
+        right: 10px;
+    }
+
     background-color: var(--base-skin-alpha);
 
     .footer-widget {

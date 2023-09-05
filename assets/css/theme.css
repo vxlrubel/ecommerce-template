@@ -49,3 +49,23 @@ h6 {
 .radius-xl {
     border-radius: 25px !important;
 }
+
+.btn-theme {
+    background-color: var(--base-skin);
+    color: var(--base-white) !important;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--base-white) !important;
+        background-color: var(--base-skin-deep);
+    }
+}
+
+.fz-12 {
+    font-size: 12px !important;
+}
+
+.fz-25 {
+    font-size: 25px !important;
+}

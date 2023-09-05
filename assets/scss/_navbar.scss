@@ -10,6 +10,21 @@
             color: var(--base-skin);
         }
     }
+
+    /* Hide the default dropdown arrow */
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 5px 10px;
+        // border: 1px solid var(--base-border);
+        border: none !important;
+        background-color: var(--base-light);
+        margin-right: 25px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
 }
 
 .logo {
@@ -87,12 +102,12 @@
 
     i,
     span {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     img {
         max-width: 16px;
-        ;
+        max-height: 16px;
     }
 }
 

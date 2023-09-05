@@ -367,17 +367,35 @@
 
                             <ul class="d-flex align-items-center m-0 p-0">
                                 <li>
-                                    <div class="set-language">
+                                    <div class="set-language d-inline-flex align-items-center">
                                         <img src="./assets/img/united_arab_emirates.png" alt="image">
-                                        <span>عربي</span>
+                                        <!-- <span>عربي</span> -->
                                     </div>
+                                    <select name="" id="" class="site-language">
+                                        <option value="bangla">Bangla</option>
+                                        <option value="english" selected>English</option>
+                                    </select>
                                 </li>
-                                <li><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
+                                <li>
+
+                                    <a href="#" data-toggle="modal" data-target=".login-popup">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </a>
+
+                                </li>
                                 <li class="position-relative">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    <a href="#" data-toggle="modal" data-target="#cartModalOpen">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
                                     <label class="shopping-cart-count">11</label>
                                 </li>
-                                <li><i class="fa-solid fa-truck"></i></li>
+                                <li>
+
+                                    <a href="#" data-toggle="modal" data-target="#package">
+                                        <i class="fa-solid fa-truck"></i>
+                                    </a>
+                                </li>
                                 <li class="d-lg-none">
                                     <button type="button" class="menu-toggle">
                                         <i class="fa-solid fa-bars-staggered"></i>
@@ -392,9 +410,124 @@
 
         <!-- mobile menu -->
         <div class="container d-lg-none">
-            <div id="mobile-menu"></div>
+            <div id="mobile-menu" class="py-3"></div>
         </div>
+
+
+        <!-- modal section -->
+
+        <!-- login modal section -->
+        <div class="modal fade login-popup" tabindex="-1" role="dialog" aria-labelledby="loginLearginPopup"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content login-popup-content">
+                    <button type="button" class="close dismisable-popup" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="popup-content">
+                        <div class="row">
+                            <div class="col-6 col-md-7">
+                                <div class="loginDiv">
+                                    <h3 class="text-center">Log in</h3>
+                                    <ul class="list-unstyled loginBtns mb-0">
+                                        <li>
+                                            <a class="btn btn-login radius-lg">
+                                                <i class="fa-brands fa-google"></i>
+                                                <span>Log in with Google</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-login radius-lg">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                                <span>Log in with Facebook</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-login radius-lg">
+                                                <i class="fa-brands fa-apple"></i>
+                                                <span>Log in with Apple</span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                    <p class="divider position-relative text-center fz-12">OR USE YOUR EMAIL OR NUMBER
+                                    </p>
+                                    <form action="javascript:void(0)" class="flex-space-evenly">
+                                        <input type="email" placeholder="Email Address"
+                                            class="form-control mb-4 popup-email py-3">
+                                        <button type="button" class="btn btn-theme w-100 py-2 radius-lg">Log in</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="col-6 col-md-5">
+                                <div class="registerDiv h-100">
+                                    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                                        <h3 class="mb-2">Welcome</h3>
+                                        <p class="text-center">Enter your personal details and start<br>journey with us
+                                        </p>
+                                        <button class="btn btn-theme radius-lg w-100 createAccountActionBtn">Create
+                                            Account</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart modal section -->
+        <div class="modal fade" id="cartModalOpen" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog cart-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your shopping bag (0)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center" class="mb-5">Your shopping bag is empty</p>
+                        <p class="text-center">
+                            <a class="btn btn-theme radius-lg px-3 py-1">Continue Shopping</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- package modal section -->
+        <div class="modal fade" id="package" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog cart-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body px-5">
+                        <h2 class="fz-25 text-center">Keep an eye on the package</h2>
+                        <p class="fz-12 text-center">Enter The Parcel Number To Know The Location</p>
+                        <div class="d-flex align-items-center order-number">
+                            <input type="text" class="form-control" placeholder="Order Number">
+                            <button class="btn" type="button">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal section end -->
+
+
     </div>
+
+
 
 
 
@@ -424,6 +557,14 @@
 
         <!-- footer widget area -->
         <div class="footer-widget">
+
+            <a class="whats-app" href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4">
@@ -551,6 +692,11 @@
 
             </div>
         </div>
+
+
+
+
+
     </footer>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>

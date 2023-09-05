@@ -1,0 +1,65 @@
+.loginDiv {
+    background-color: var(--base-white);
+    padding: 15px;
+
+    @include media('laptop') {
+        padding: 50px 70px;
+    }
+}
+
+.registerDiv {
+    background-color: var(--base-skin-alpha);
+    padding: 15px;
+
+    @include media('tablet') {
+        padding: 25px;
+    }
+
+    @include media('laptop') {
+        padding: 50px 35px;
+    }
+}
+
+.btn-login {
+    display: inline-flex;
+    padding: 10px 10px 10px 25px;
+    align-items: center;
+    border: 1px solid var(--base-border-dark);
+    margin-bottom: 25px;
+    cursor: pointer;
+    width: 100%;
+
+    @include media('laptop') {
+        padding: 10px 10px 10px 50px;
+    }
+
+    i {
+        margin-right: 30px;
+    }
+
+}
+
+.form-control.mb-4.popup-email {
+    border: 1px solid var(--base-border-dark) !important;
+    border-radius: 20px;
+    padding: 20px !important;
+}
+
+.dismisable-popup {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: none !important;
+    z-index: 1030;
+}
+
+.login-popup-content {
+    border-radius: 30px;
+    overflow: hidden;
+}
