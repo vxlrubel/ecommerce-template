@@ -1,13 +1,14 @@
 @import url('satoshi.css');
 
 :root {
-    --base-skin-alpha: #F6F1EA;
+    --base-skin-alpha: #F6F1EAEB;
     --base-skin: #bc8b57;
     --base-skin-deep: #a77743;
     --body-color: #2b2826;
     --base-white: #ffffff;
     --base-light: #f8f9fa;
     --base-border: #dee2e6;
+    --base-border-dark: #777777;
 }
 
 *,

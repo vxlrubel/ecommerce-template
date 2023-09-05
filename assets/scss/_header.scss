@@ -6,10 +6,8 @@
     &:hover {
         border-color: var(--base-skin) !important;
     }
-}
 
-@media(min-width: 768px) {
-    .top-search-form {
+    @include media('tablet') {
         max-width: 720px;
     }
 }

@@ -1,0 +1,29 @@
+.newslatter-title {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.newslatter-subtitle p {
+    font-size: 15px;
+}
+
+.footerTop_form {
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.newslatter {
+    background-color: transparent;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--base-border-dark);
+
+    >* {
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 10px 0;
+        background-color: transparent !important;
+        color: var(--body-color) !important;
+    }
+}

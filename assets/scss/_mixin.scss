@@ -1,0 +1,26 @@
+@mixin media($device: '') {
+
+    @if($device=='phone') {
+        $device: 576px;
+    }
+
+    @if($device=='tablet') {
+        $device: 768px;
+    }
+
+    @if($device=='laptop') {
+        $device: 992px;
+    }
+
+    @if($device=='desktop') {
+        $device: 1200px;
+    }
+
+    @if($device=='screen') {
+        $device: 1400px;
+    }
+
+    @media (min-width: $device) {
+        @content;
+    }
+}

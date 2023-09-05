@@ -49,6 +49,7 @@
             >li>a {
                 padding-top: 25px;
                 padding-bottom: 25px;
+                font-size: 14px;
             }
 
             .mega-menu {
@@ -124,6 +125,18 @@
     &:hover div {
         display: inline-flex;
     }
+}
+
+.menu-toggle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 20px;
 }
 
 @keyframes submenuFadeIn {
