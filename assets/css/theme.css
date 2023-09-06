@@ -33,7 +33,11 @@ h5,
 h6 {
     font-family: 'Satoshi-LightItalic', sans-serif;
 }
-
+@media(min-width: 1280px){
+    .container {
+        max-width: 1280px;
+    }
+}
 .radius-sm {
     border-radius: 10px !important;
 }
@@ -48,6 +52,9 @@ h6 {
 
 .radius-xl {
     border-radius: 25px !important;
+}
+.radius-xxl{
+    border-radius: 30px !important;
 }
 
 .btn-theme {
@@ -68,4 +75,18 @@ h6 {
 
 .fz-25 {
     font-size: 25px !important;
+}
+.fz-36{
+    font-size: 36px !important;
+}
+.bg-theme{
+    background-color: var(--base-skin);
+}
+.bg-theme-alpha{
+    background-color: var(--base-skin-alpha);
+}
+@media(min-width:992px){
+    .mx-960{
+        max-width: 960px !important;
+    }
 }

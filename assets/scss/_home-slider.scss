@@ -1,0 +1,123 @@
+.object-fit { width: 100%; height: 100%; object-fit: cover; }	
+
+
+/* plugin overrides */
+.swiper-wrapper {
+	height: 100%;			
+}
+.swiper-slide {
+	backface-visibility: hidden;
+	overflow: hidden;			
+}
+
+
+/* my stuff */
+.multi-px-slider {
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	transition: opacity .6s ease;
+}
+
+.multi-px-slider.loading {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.mps-slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.mps-img {
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Large slider */
+.lg-slider {
+	width: 60%;
+}
+
+/* Small slider */
+.sm-slider {
+	width: 40%;
+}
+
+/* Arrows */
+.mps-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	transform: translateY(-50%);
+}
+
+.mps-prev {
+	left: 1.5em;
+}
+
+.mps-next {
+	right: 1.5em;
+}
+
+/* curtain */
+.curtain {			
+	position: absolute;
+	top: 0;
+	left: 60%;
+	z-index: 2;
+	width: 40%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.is-animating .curtain {
+	animation: curtain 3.75s ease-in-out;
+}
+
+@keyframes curtain {
+	0% {
+		left: 60%;
+		width: 40%;
+	}
+	46% {				
+		left: 0%;
+		width: 60%;
+	}
+	53% {
+		left: 0%;	
+		width: 60%;			
+	}
+	100% {				
+		left: 60%;
+		width: 40%;
+	}
+}
+
+.pattern-2 {
+	background: url(../images/pattern-2.png) repeat-x;
+	width: 330%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	opacity: .3;		
+}
+.slider-trigger-button{
+    display: inline-flex;
+    height: 50px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba( 0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: var(--base-light);
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    
+}
