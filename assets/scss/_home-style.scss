@@ -129,4 +129,15 @@
     }
 }
 
+.next-prev {
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-radius: 50%;
+}
+
 // new arrivale end

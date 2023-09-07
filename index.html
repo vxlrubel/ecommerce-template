@@ -611,9 +611,10 @@
                <i class="fa-solid fa-arrow-right-long"></i>
             </a>
          </div>
-         <div class="arrivalsSection_bottom position-relative product swiperSliderIcon">
+
+         <div class="arrivalsSection_bottom position-relative product swiperSliderIcon overflow-hidden">
             <div
-               class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
+               class="arrival-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                   <div class="swiper-slide swiper-slide-visible swiper-slide-active"
                      style="width: 296.667px; margin-right: 20px;">
@@ -967,18 +968,14 @@
                   </div>
 
                </div>
-               <div
-                  class="swiper-pagination-a swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                  <span class="swiper-pagination-bullet swiper-pagination-bullet-active">1</span><span
-                     class="swiper-pagination-bullet">2</span><span class="swiper-pagination-bullet">3</span>
-               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="next-prev swiper-button-next"></div>
+            <div class="next-prev swiper-button-prev"></div>
          </div>
          <div class="text-center d-sm-none"><a href="perfumes" class="discoverAllBtn my-3">Discover all</a></div>
       </div>
    </section>
+
    <!-- new arrivale end -->
    <!-- 
      <section class="bestSellers py-55 pt-0">
@@ -2327,6 +2324,30 @@
 
 
 
+
+   <div class="container">
+      <div class="swiper">
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+         </div>
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+
+         <!-- If we need scrollbar -->
+         <div class="swiper-scrollbar"></div>
+      </div>
+   </div>
+   <!-- start footer section -->
+
    <footer class="footer-area clearfix">
       <!-- footer subscriptions form -->
       <div class="footer-subscription">
@@ -2488,15 +2509,12 @@
          </div>
       </div>
 
-
-
-
-
    </footer>
    <script src="./assets/js/jquery.js"></script>
    <script src="./assets/js/bootstrap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
    <script src="./assets/js/custom.js"></script>
+   <script src="./assets/js/custom-slider.js"></script>
 
 </body>
 
