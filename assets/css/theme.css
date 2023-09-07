@@ -33,11 +33,13 @@ h5,
 h6 {
     font-family: 'Satoshi-LightItalic', sans-serif;
 }
-@media(min-width: 1280px){
+
+@media(min-width: 1280px) {
     .container {
         max-width: 1280px;
     }
 }
+
 .radius-sm {
     border-radius: 10px !important;
 }
@@ -53,21 +55,20 @@ h6 {
 .radius-xl {
     border-radius: 25px !important;
 }
-.radius-xxl{
+
+.radius-xxl {
     border-radius: 30px !important;
 }
 
-.btn-theme {
-    background-color: var(--base-skin);
-    color: var(--base-white) !important;
-    text-decoration: none;
+.btn {
     cursor: pointer;
-
-    &:hover {
-        color: var(--base-white) !important;
-        background-color: var(--base-skin-deep);
-    }
 }
+
+[class*="btn-"] {
+    border-radius: 20px !important;
+}
+
+
 
 .fz-12 {
     font-size: 12px !important;
@@ -76,17 +77,21 @@ h6 {
 .fz-25 {
     font-size: 25px !important;
 }
-.fz-36{
+
+.fz-36 {
     font-size: 36px !important;
 }
-.bg-theme{
+
+.bg-theme {
     background-color: var(--base-skin);
 }
-.bg-theme-alpha{
+
+.bg-theme-alpha {
     background-color: var(--base-skin-alpha);
 }
-@media(min-width:992px){
-    .mx-960{
+
+@media(min-width:992px) {
+    .mx-960 {
         max-width: 960px !important;
     }
 }

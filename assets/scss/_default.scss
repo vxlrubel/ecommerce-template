@@ -1,0 +1,43 @@
+.btn-theme {
+    background-color: var(--base-skin);
+    color: var(--base-white) !important;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--base-white) !important;
+        background-color: var(--base-skin-deep);
+    }
+}
+
+.btn-theme-outline {
+    border-color: var(--base-skin);
+    background-color: transparent;
+    color: var(--base-skin) !important;
+
+    &:hover {
+        color: var(--base-white) !important;
+        background-color: var(--base-skin);
+    }
+}
+
+.discover-link {
+    display: inline-flex;
+    text-decoration: none !important;
+    align-items: center;
+    justify-content: end !important;
+    color: var(--base-skin);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        color: var(--base-skin);
+        padding-left: 15px;
+    }
+
+    i {
+        transition: all 0.1s ease-in;
+    }
+
+    &:hover i {
+        margin-left: 10px;
+    }
+}
