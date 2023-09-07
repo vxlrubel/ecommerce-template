@@ -141,3 +141,113 @@
 }
 
 // new arrivale end
+
+// best seller
+.best-seller-product-cart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    z-index: 1030;
+
+    .productCard_sliderSpace {
+        width: 100%;
+        max-width: 320px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .addProduct {
+        max-width: 320px !important;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+}
+
+.bestSellers_bg {
+    video {
+        display: flex;
+        height: 800px;
+        object-fit: cover;
+    }
+}
+
+
+// lagecy section
+.lagecy-section {
+    background-color: var(--base-skin-alpha);
+
+    .bg-theme-alpha {
+        background-color: var(--base-white);
+    }
+
+    h3 {
+        max-width: 100% !important;
+    }
+}
+
+.gift-area {
+    .discover-link {
+        width: auto !important;
+    }
+}
+
+.hover-img-box {
+    .info-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:hover img {
+        transform: scale(1.3) translateY(-30px) rotate(2deg);
+    }
+
+    ul {
+        position: absolute;
+        display: none;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        list-style-type: none;
+
+        li {
+            a {
+                display: inline-block;
+                padding: 3px;
+                text-decoration: none;
+                color: var(--base-white) !important;
+            }
+        }
+
+        li:not(:last-child) {
+            margin-right: 7px;
+        }
+    }
+
+    &:hover ul {
+        display: flex;
+        animation: submenuFadeIn 0.4s ease-in-out;
+    }
+}
+
+.fragrance-bg {
+    position: relative;
+    background-color: #e4d9ce33;
+    background-image: url(https://en-ae.ajmal.com/public/images/our-story-banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    content: '';
+}
