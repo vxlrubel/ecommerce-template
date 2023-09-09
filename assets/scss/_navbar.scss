@@ -174,7 +174,34 @@
 
 }
 
+.has-submenu {
 
+
+    .sub-menu {
+        animation: submenuFadeIn 0.3s linear both;
+
+        @include media('laptop') {
+
+            position: absolute;
+            display: none;
+            top: 100%;
+            width: 170px;
+            background-color: var(--base-white);
+            padding: 15px !important;
+            z-index: 1090;
+
+            a {
+                display: inline-block;
+                padding: 5px 0 !important;
+                text-transform: capitalize !important;
+            }
+        }
+    }
+
+    &:hover .sub-menu {
+        display: block;
+    }
+}
 
 // mobile menu
 

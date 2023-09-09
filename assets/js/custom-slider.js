@@ -7,6 +7,8 @@ class customSlider {
     init() {
         this.homeMainSlide();
         this.arrivaleSlides();
+        this.reviewSlider();
+        this.pressNMediaSlider();
     }
 
     // home main slider
@@ -185,14 +187,16 @@ class customSlider {
     }
 
     arrivaleSlides() {
-        const swiper = new Swiper('.arrival-swiper', {
+        new Swiper('.arrival-swiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                // nextEl: '.swiper-button-next',
+                // prevEl: '.swiper-button-prev',
+                nextEl: '.review-next',
+                prevEl: '.review-prev',
             },
 
             // And if we need scrollbar
@@ -220,6 +224,55 @@ class customSlider {
                     spaceBetween: 30
                 }
             }
+        });
+    }
+
+    reviewSlider() {
+        new Swiper('.review-slider', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.review-next',
+                prevEl: '.review-prev',
+            },
+            slidesPerView: 1,
+
+        });
+    }
+    pressNMediaSlider() {
+        new Swiper('.press-n-media', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.review-next',
+                prevEl: '.review-prev',
+            },
+            slidesPerView: 1,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                }
+            }
+
         });
     }
 }

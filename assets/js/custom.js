@@ -3,6 +3,7 @@
         init() {
             this.cloneNavbar();
             this.toggleMenu();
+            this.cartItemIncreaseDecrease();
         }
 
         /**
@@ -57,6 +58,33 @@
                 })
             })
 
+        }
+
+        cartItemIncreaseDecrease() {
+            $('.increse_decrese a.plus').on('click', function (e) {
+
+                var inputElement = $(this).siblings('input');
+                var step = parseFloat(inputElement.attr("step"));
+                var currentValue = parseFloat(inputElement.val());
+                e.preventDefault();
+
+                // Check if the current value is less than the max value
+                if (currentValue + step <= parseFloat(inputElement.attr("max"))) {
+                    inputElement.val((currentValue + step).toString());
+                }
+            });
+
+            $('.increse_decrese a.minus').click(function (e) {
+                var inputElement = $(this).siblings('input');
+                var step = parseFloat(inputElement.attr("step"));
+                var currentValue = parseFloat(inputElement.val());
+                e.preventDefault();
+
+                // Check if the current value is greater than the min value
+                if (currentValue - step >= parseFloat(inputElement.attr("min"))) {
+                    inputElement.val((currentValue - step).toString());
+                }
+            });
         }
     }
 
