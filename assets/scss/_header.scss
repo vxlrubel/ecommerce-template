@@ -1,3 +1,71 @@
+// social share
+.social-share {
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        border: 1px solid var(--base-border);
+        border-radius: 5px;
+
+        &:hover {
+            color: var(--base-white) !important;
+        }
+    }
+
+    a:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    a.facebook {
+        color: #1877F2;
+        border-color: #1877F2;
+
+        &:hover {
+            background-color: #1877F2;
+        }
+    }
+
+    a.twitter {
+        color: #1d9bf0;
+        border-color: #1d9bf0;
+
+        &:hover {
+            background-color: #1d9bf0;
+        }
+    }
+
+    a.instagram {
+        color: #F60698;
+        border-color: #F60698;
+
+        &:hover {
+            background: linear-gradient(45deg, #6F17FF, #F60698);
+
+        }
+    }
+
+    a.linkedin {
+        color: #0C61BF;
+        border-color: #0C61BF;
+
+        &:hover {
+            background-color: #0C61BF;
+        }
+    }
+
+    a.youtube {
+        color: #F70000;
+        border-color: #F70000;
+
+        &:hover {
+            background-color: #F70000;
+        }
+    }
+}
+
 // header top bar
 .top-search-form {
     margin-left: auto;
@@ -15,12 +83,14 @@
 .top-search-form i {
     padding: 5px 15px;
     color: var(--body-color);
+    cursor: pointer;
 }
 
 .top-search-form input {
     border: none !important;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 20px !important;
 }
 
 .top-search-form input:focus {
