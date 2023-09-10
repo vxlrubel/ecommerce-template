@@ -10,3 +10,11 @@
         font-family: 'Satoshi-Medium', sans-serif;
     }
 }
+
+.register-form {
+    width: 100%;
+
+    @include media('phone') {
+        max-width: 450px;
+    }
+}

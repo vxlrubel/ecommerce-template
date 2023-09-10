@@ -517,9 +517,73 @@
 
    </header>
    <!-- end header section  -->
-   <div class="container">
-      <h1 class="text-center py-5 my-4 text-capitalize">account page</h1>
-   </div>
+   <section class="clearfix account-page">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="account-details">
+                  <ul id="tabsJustified" class="nav nav-tabs">
+                     <li>
+                        <a href="#" data-target="#dashboard" data-toggle="tab">Home</a>
+                     </li>
+                     <li>
+                        <a href="#" data-target="#orders" data-toggle="tab">orders</a>
+                     </li>
+                     <li>
+                        <a href="#" data-target="#download" data-toggle="tab">download</a>
+                     </li>
+                     <li>
+                        <a href="#" data-target="#address" data-toggle="tab">address</a>
+                     </li>
+                     <li>
+                        <a href="#" data-target="#paymentMethods" data-toggle="tab">payment methods</a>
+                     </li>
+                     <li>
+                        <a href="#" data-target="#accountDetails" data-toggle="tab">account details</a>
+                     </li>
+                     <li>
+                        <a href="#">Logout</a>
+                     </li>
+                  </ul>
+                  <div id="tabsJustifiedContent" class="tab-content">
+                     <div id="dashboard" class="tab-pane fade active show">
+                        dashboard
+                     </div>
+                     <div id="orders" class="tab-pane fade">
+                        orders
+                     </div>
+                     <div id="download" class="tab-pane fade">
+                        download
+                     </div>
+                     <div id="address" class="tab-pane fade">
+                        address
+                     </div>
+                     <div id="paymentMethods" class="tab-pane fade">
+                        Payment Methods
+                     </div>
+                     <div id="accountDetails" class="tab-pane fade">
+                        <div class="row">
+                           <div class="col-md-6 mb-2">
+                              <label for="fname">First Name</label>
+                              <input type="text" class="form-control radius-lg" id="fname">
+                           </div>
+                           <div class="col-md-6 mb-2">
+                              <label for="lname">First Name</label>
+                              <input type="text" class="form-control radius-lg" id="lname">
+                           </div>
+                           <div class="col-md-12 mb-2">
+                              <label for="email">First Name</label>
+                              <input type="email" class="form-control radius-lg" id="email">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
    <!-- start footer section -->
 
    <footer class="footer-area clearfix">

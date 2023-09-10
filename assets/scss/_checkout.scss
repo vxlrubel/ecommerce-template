@@ -24,9 +24,9 @@
     }
 }
 
-.delivary-details {
-    h3 {
-        font-family: 'Satoshi-Medium', sans-serif;
-        font-size: 20px;
-    }
+.checkout-accordion button {
+    color: var(--base-body) !important;
+    text-decoration: none !important;
+    padding: 0;
+    font-size: 20px;
 }

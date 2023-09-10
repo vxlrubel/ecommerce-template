@@ -1,0 +1,40 @@
+.account-details {
+    display: flex;
+
+    .nav-tabs {
+        width: 300px;
+
+        li {
+            display: flex;
+            width: 100%;
+            border: 1px solid var(--base-border);
+
+            a {
+                display: flex;
+                width: 100%;
+                text-decoration: none;
+                color: var(--base-body);
+                padding: 7px 10px;
+                text-transform: capitalize;
+
+                &:hover {
+                    color: var(--base-skin);
+                }
+            }
+
+            a.active {
+                background-color: var(--base-skin);
+                color: var(--base-white);
+            }
+        }
+
+        li:not(:last-child) {
+            border-bottom-width: 0;
+        }
+    }
+
+    .tab-content {
+        width: calc(100% - 300px);
+        padding-left: 30px;
+    }
+}

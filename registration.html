@@ -517,9 +517,49 @@
 
    </header>
    <!-- end header section  -->
-   <div class="container">
-      <h1 class="text-center py-5 my-4 text-capitalize">Register page</h1>
+
+   <div class="clearfix login-page py-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="d-flex justify-content-center align-items-center">
+                  <form action="./registration.html"
+                     class="register-form login-form d-inline-block shadow-lg p-3 p-md-5 radius-lg" method="post">
+                     <h3 class="text-center mb-4">Register</h3>
+                     <p>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required class="form-control radius-lg">
+                     </p>
+                     <p>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" required class="form-control radius-lg">
+                     </p>
+                     <p>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required class="form-control radius-lg">
+                     </p>
+                     <p>
+                        <label for="cmp">Confirm Password</label>
+                        <input type="cmp" id="password" required class="form-control radius-lg">
+                     </p>
+                     <input type="submit" value="Register Now" class="btn btn-theme radius-lg w-100">
+                     <div class="mt-2 d-flex align-items-center justify-content-between">
+                        <p class="m-0">
+                           <a href="./login.html" class="text-theme"> Login here</a>
+                        </p>
+                        <p class="m-0">
+                           <a href="#" class="text-theme text-decoration-none text-capitalize">forgotten password</a>
+                        </p>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
+
+
    <!-- start footer section -->
 
    <footer class="footer-area clearfix">
