@@ -286,6 +286,9 @@
 .press-media-items {
     .thumb {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 0;
         bottom: 0;
         right: 0;
@@ -293,6 +296,11 @@
         z-index: -1;
         padding: 15px;
         transition: all 0.3s ease-in-out;
+        background-color: #e2ded7;
+
+        img {
+            mix-blend-mode: multiply;
+        }
     }
 
     .content {
