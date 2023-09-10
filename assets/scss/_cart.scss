@@ -21,6 +21,13 @@
 }
 
 // cart page style
+.cart-page {
+    h2 {
+        font-family: 'Satoshi-Regular', sans-serif;
+        font-weight: 600;
+        font-size: 23px;
+    }
+}
 
 .cart-items {
     list-style: none;
@@ -125,5 +132,48 @@
 
     li:not(:last-child) {
         border-bottom: 0 !important;
+    }
+}
+
+.order-summery {
+    li {
+        span {
+            display: inline-flex;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Satoshi-Regular', sans-serif;
+        }
+
+        .coupon {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--base-skin);
+            padding: 3px;
+            overflow: hidden;
+            border-radius: 30px;
+
+            input[type="submit"] {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 25px;
+                text-transform: capitalize;
+                font-size: 12px;
+                border-radius: 20px;
+                color: var(--base-white);
+                background-color: var(--base-skin);
+            }
+        }
+
+        p {
+            color: rgba(43, 40, 38, 0.5);
+        }
     }
 }

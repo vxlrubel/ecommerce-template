@@ -41,6 +41,10 @@ h6 {
     }
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .radius-sm {
     border-radius: 10px !important;
 }
@@ -69,7 +73,13 @@ h6 {
     border-radius: 20px !important;
 }
 
+.text-theme {
+    color: var(--base-skin);
+}
 
+.text-theme:hover {
+    color: var(--base-skin-deep);
+}
 
 .fz-12 {
     font-size: 12px !important;

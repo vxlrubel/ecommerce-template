@@ -517,11 +517,167 @@
 
    </header>
    <!-- end header section  -->
-   <div class="container">
-      <h1 class="text-center py-5 my-4 text-capitalize">checkout page</h1>
-   </div>
-   <!-- start footer section -->
 
+
+   <div class="clearfix cart-page py-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h2>login or Sign Up</h2>
+               <form class="border px-5 py-4 checkout-login mb-3" method="post">
+                  <label for="username">Username/Email</label>
+                  <input type="text" class="form-control mb-3 radius-xl py-4" id="username" required>
+                  <label for="password">Password</label>
+                  <input type="text" id="password" class="form-control mb-3 radius-xl py-4" required>
+                  <button type="button" class="btn btn-theme"> Login </button>
+                  <p class="py-2">
+                     <a href="./registration.html" class="text-dark">Register Now</a>
+                  </p>
+               </form>
+               <p class="text-center">OR</p>
+               <div class="text-center mb-5">
+                  <div class="d-inline-flex justify-content-center align-items-center social-login">
+                     <a href="#"><i class="fa-brands fa-google"></i></a>
+                     <a href="#" class="mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+                     <a href="#"><i class="fa-brands fa-apple"></i></a>
+                  </div>
+               </div>
+               <ul class="cart-items p-0 m-0 delivary-details">
+                  <li class="d-block mt-3">
+                     <h3 class="text-capitalize">delevary details</h3>
+                     <div class="d-block">
+                        <p class="m-0">
+                           <strong>Name: </strong> <span>Rubel Mahmud</span>
+                        </p>
+                        <p class="m-0">
+                           <strong>Address: </strong> <span>Gulshan-2, Dhaka-1212</span>
+                        </p>
+                        <p class="m-0">
+                           <strong>Email: </strong> <span>vxlrubel@gmail.com</span>
+                        </p>
+                     </div>
+                  </li>
+                  <li class="d-block">
+                     <h3 class="text-capitalize">delevary Method</h3>
+                  </li>
+                  <li class="d-block">
+                     <h3 class="text-capitalize">payment method</h3>
+                     <div class="mt-3">
+                        <p class="m-0 p-0">
+                           <input type="radio" id="paypal" name="payment-method"> <label for="paypal">Paypal</label>
+                        </p>
+                        <p class="m-0 p-0">
+                           <input type="radio" id="stripe" name="payment-method"> <label for="stripe">Stripe</label>
+                        </p>
+                        <p class="m-0 p-0">
+                           <input type="radio" id="credit-cart" name="payment-method"> <label for="credit-cart">Credit
+                              Cart</label>
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-6 ">
+               <h2>Your Selection</h2>
+               <ul class="cart-items p-0 mb-5">
+                  <li class="position-relative">
+                     <div class="thumb">
+                        <img
+                           src="https://en-ae.ajmal.com/media/catalog/product/cache/7db5978f8213027e9a230423563b06cd/s/a/sacred_love1.png"
+                           alt="product image" class="img-fluid">
+                     </div>
+                     <div class="desc">
+                        <h4 class="text-capitalize">sacred love</h4>
+                        <p class="m-0">EAU DE PARFUME / 50 ML / Female</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                           <div class="price">
+                              <span>157.5</span> <span> AED</span>
+                           </div>
+                           <div class="increse_decrese">
+                              <a href="#" class="minus">
+                                 <i class="fa-solid fa-minus"></i>
+                              </a>
+                              <input type="number" min="1" max="999" step="1" value="1">
+                              <a href="#" class="plus">
+                                 <i class="fa-solid fa-plus"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="items-remove">
+                        <i class="fa-solid fa-trash"></i>
+                     </a>
+                  </li>
+                  <li class="position-relative">
+                     <div class="thumb">
+                        <img
+                           src="https://en-ae.ajmal.com/media/catalog/product/cache/7db5978f8213027e9a230423563b06cd/s/a/sacred_love1.png"
+                           alt="product image" class="img-fluid">
+                     </div>
+                     <div class="desc">
+                        <h4 class="text-capitalize">sacred love</h4>
+                        <p class="m-0">EAU DE PARFUME / 50 ML / Female</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                           <div class="price">
+                              <span>157.5</span> <span> AED</span>
+                           </div>
+                           <div class="increse_decrese">
+                              <a href="#" class="minus">
+                                 <i class="fa-solid fa-minus"></i>
+                              </a>
+                              <input type="number" min="1" max="999" step="1" value="1">
+                              <a href="#" class="plus">
+                                 <i class="fa-solid fa-plus"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="items-remove">
+                        <i class="fa-solid fa-trash"></i>
+                     </a>
+                  </li>
+               </ul>
+               <h2>Order summary</h2>
+               <ul class="m-0 p-0 order-summery">
+                  <li class="d-flex justify-content-between align-items-center">
+                     <span>Subtotal</span>
+                     <span>150 AED</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                     <span>Shipping Charge</span>
+                     <span>50 AED</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                     <span>Vat</span>
+                     <span>25 AED</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mt-4">
+                     <div class="coupon">
+                        <input type="text" placeholder="Apply Coupon" class="border-0 shadow-none form-control">
+                        <input type="submit" value="apply" class="border-0 shadow-none btn btn-theme">
+                     </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mt-4">
+                     <h3 class="text-capitalize">Total including taxes</h3>
+                     <h3>225 AED</h3>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mt-4">
+                     <button type="button" class="btn btn-theme w-100 radius-lg p-2"> Processed</button>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mt-4">
+                     <p>
+                        By placing the order, you agree to accept our terms and conditions.Our checkout is safe and
+                        secure. Your personal and payment information is securely transmitted via 128-bit encryption.
+                        We do not store any payment card information on our systems
+                     </p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- start footer section -->
    <footer class="footer-area clearfix">
       <!-- footer subscriptions form -->
       <div class="footer-subscription">
@@ -619,8 +775,6 @@
          </div>
       </div>
 
-
-
       <div class="bottom">
          <div class="container">
             <div class="row align-items-center">
@@ -676,9 +830,7 @@
                <div class="col-12">
                   <p class="m-0 py-3 text-center">
                      &copy; 2023 <a href="https://www.digitalmarketingagencyllc.com/" target="_blank">Digital Marketing
-                        Agency LLC</a> |
-                     All
-                     Rights Copyright Reserved
+                        Agency LLC</a> | All Rights Copyright Reserved
                   </p>
                </div>
             </div>

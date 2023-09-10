@@ -1,0 +1,12 @@
+.login-form {
+    width: 100%;
+    background-color: var(--base-whtie);
+
+    @include media('phone') {
+        max-width: 400px;
+    }
+
+    h3 {
+        font-family: 'Satoshi-Medium', sans-serif;
+    }
+}
