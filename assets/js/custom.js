@@ -4,6 +4,7 @@
             this.cloneNavbar();
             this.toggleMenu();
             this.cartItemIncreaseDecrease();
+            this.cartItemRemove();
         }
 
         /**
@@ -84,6 +85,21 @@
                 if (currentValue - step >= parseFloat(inputElement.attr("min"))) {
                     inputElement.val((currentValue - step).toString());
                 }
+            });
+        }
+
+        cartItemRemove() {
+            $('.items-remove').each(function () {
+                $(this).on('click', function (e) {
+                    e.preventDefault();
+                    $(this).parents('li').css({
+                        backgroundColor: '#d63031',
+                        color: 'white'
+                    }).fadeOut(200);
+                    setTimeout(function () {
+                        $(this).parents('li').remove();
+                    }, 200);
+                })
             });
         }
     }

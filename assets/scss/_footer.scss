@@ -19,7 +19,7 @@
 
     .footer-widget {
         .widget-title {
-            font-size: 13px;
+            font-size: 20px;
             font-family: 'Satoshi-MediumItalic';
         }
 
@@ -69,6 +69,7 @@
             border: 1px solid var(--base-skin);
             border-radius: 50%;
             color: var(--base-skin);
+            margin: 0;
 
             &:hover {
                 color: var(--base-skin-deep);
@@ -83,5 +84,14 @@
             font-size: 12px;
             margin: 0;
         }
+    }
+
+    hr {
+        margin: 0;
+        border-top: 1px solid #aaaaaa;
+    }
+
+    .copyright-text {
+        background-color: #e2ded7;
     }
 }

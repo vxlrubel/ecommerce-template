@@ -23,14 +23,44 @@
 
    <!-- start header section -->
    <header class="clearfix header-area">
-      <div class="container header-top pt-3">
+      <div class="top-header bg-theme-alpha">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-4">
+                  <div class="text-center text-md-left py-2 p-0">
+                     <i class="fa-regular fa-envelope"></i>
+                     <span class="ml-2">example@domain.com</span>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="text-center py-2 p-0">
+                     <i class="fa-solid fa-phone"></i>
+                     <span class="ml-2">+123 987654321</span>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="text-center text-md-right py-2 p-0">
+                     <div class="d-inline-flex social-share">
+                        <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container header-top pt-4 pb-3">
          <div class="row">
             <div class="col-12" class="search-form">
                <form action="#">
                   <div class="d-flex position-relative align-items-center border radius-xl top-search-form">
-                     <i class="fas fa-magnifying-glass"></i>
+                     <!-- <i class="fas fa-magnifying-glass"></i> -->
                      <input type="search" class="form-control">
-                     <i class="fa-solid fa-microphone search-icon-voice"></i>
+                     <!-- <i class="fa-solid fa-microphone search-icon-voice"></i> -->
+                     <i class="fas fa-magnifying-glass"></i>
                   </div>
                </form>
             </div>
@@ -39,7 +69,7 @@
       <div class="container">
          <div class="row">
             <div class="col-12">
-               <div class="header-menu-area d-flex align-items-center">
+               <div class="header-menu-area d-flex align-items-center pb-lg-2">
                   <div class="logo">
                      <a href="index.html">
                         <img src="./assets/img/logo.svg" alt="logo image">
@@ -679,7 +709,6 @@
    </div>
 
    <!-- start footer section -->
-
    <footer class="footer-area clearfix">
       <!-- footer subscriptions form -->
       <div class="footer-subscription">
@@ -777,51 +806,40 @@
          </div>
       </div>
 
-      <div class="footer-bottom pb-2">
-         <div class="container pt-3">
-            <div class="row align-items-center">
 
-               <!-- horizontal line -->
+
+      <div class="bottom">
+         <div class="container">
+            <div class="row align-items-center">
                <div class="col-12">
                   <hr>
                </div>
-
-               <div class="col-md-6 col-lg-3">
-                  <ul class="list-inline footerEnd_lang text-center text-md-left">
-                     <li class="list-inline-item">
-                        <a href="#">
-                           <img src="./assets/img/card-list.svg" alt="card-list" class="img-fluid">
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <ul
-                     class="list-inline footerEnd_Social d-flex align-items-center justify-content-center justify-content-md-end justify-content-lg-center">
-                     <li class="list-inline-item">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-md-6 col-lg-2 footerEnd_contactInfo">
-                  <div class="text-center text-md-left">
-                     <p><a href="mailto:support@ajmalperfume.com">support@ajmalperfume.com</a></p>
-                     <p>Toll Free -<a href="tel:800 25625">800 25625</a></p>
+               <div class="col-sm-6 col-md-4">
+                  <div class="text-center text-md-left py-3">
+                     <img src="./assets/img/card-list.svg" alt="cart image" class="img-fluid">
                   </div>
-
                </div>
-
-               <div class="col-md-6 col-lg-4">
-                  <div class="text-center text-md-right">
+               <div class="col-sm-6 col-md-4">
+                  <div class="text-center text-sm-right text-md-center py-3">
+                     <ul
+                        class="footerEnd_Social d-flex align-items-center justify-content-center justify-content-sm-end justify-content-md-center m-0 p-0">
+                        <li class="list-inline-item">
+                           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="text-center text-md-right py-3">
                      <div class="d-inline-flex align-items-center">
                         <a href="#" class="mr-2">
                            <img src="./assets/img/app-store.svg" alt="app-store" class="img-fluid">
@@ -834,10 +852,23 @@
                         </a>
                      </div>
                   </div>
-
                </div>
             </div>
+         </div>
+      </div>
 
+      <div class="copyright-text">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <p class="m-0 py-3 text-center">
+                     &copy; 2023 <a href="https://www.digitalmarketingagencyllc.com/" target="_blank">Digital Marketing
+                        Agency LLC</a> |
+                     All
+                     Rights Copyright Reserved
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
 
