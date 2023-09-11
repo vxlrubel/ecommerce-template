@@ -1,47 +1,36 @@
-<div class="col-lg-6">
-   <form class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg" action="./account.html" method="post">
-      <p>
-         <label for="b-email">Email Address</label>
-         <input type="email" class="form-control radius-lg" id="b-email">
-      </p>
-      <p>
-         <label for="b-first-name">First Name</label>
-         <input type="text" class="form-control radius-lg" id="b-first-name">
-      </p>
-      <p>
-         <label for="b-last-name">Last Name</label>
-         <input type="text" class="form-control radius-lg" id="b-last-name">
-      </p>
-      <p>
-         <label for="b-address1">Address 1</label>
-         <textarea id="b-address1" class="form-control radius-lg"></textarea>
-      </p>
-      <p>
-         <label for="b-address2">Address 1</label>
-         <textarea id="b-address2" class="form-control radius-lg"></textarea>
-      </p>
-      <p>
-         <label for="b-country">Country</label>
-         <input type="text" id="b-country" class="form-control radius-lg">
-      </p>
-      <p>
-         <label for="b-zip">Zip Code</label>
-         <input type="text" id="b-zip" class="form-control radius-lg">
-      </p>
-      <p>
-         <label for="b-city">City</label>
-         <input type="text" id="b-city" class="form-control radius-lg">
-      </p>
-      <p>
-         <label for="b-state">State</label>
-         <input type="text" id="b-state" class="form-control radius-lg">
-      </p>
-      <p>
-         <label for="b-phone">Phone Number</label>
-         <input type="text" class="form-control radius-lg" id="b-phone">
-      </p>
-      <p>
-         <a href="#" class="btn btn-theme radius-lg fz-12 px-4">Edit Address</a>
-      </p>
-   </form>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open
+   modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open
+   modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+   data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <form>
+               <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+               </div>
+               <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+               </div>
+            </form>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+         </div>
+      </div>
+   </div>
 </div>

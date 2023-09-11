@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ecommerce Template || Just another ecommerce website for</title>
    <!-- stylesheet -->
-
    <!-- include font awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -521,15 +520,42 @@
 
    <section class="clearfix product-single">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-6">
-               <div class="text-center">
-                  <img
-                     src="https://en-ae.ajmal.com/media/catalog/product/cache/7db5978f8213027e9a230423563b06cd/s/h/shadow-her-big18102015112425.jpg"
-                     alt="product single image" class="img-fluid">
-               </div>
+         <div class="row align-items-center">
+            <div class="col-lg-5">
+               <swiper-container class=" radius-lg overflow-hidden" class="mySwiper" thumbs-swiper=".mySwiper2"
+                  loop="true" space-between="30">
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </swiper-slide>
+               </swiper-container>
+
+               <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+                  watch-slides-progress="true">
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </swiper-slide>
+                  <swiper-slide class="radius-lg overflow-hidden">
+                     <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </swiper-slide>
+
+               </swiper-container>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7 pl-lg-5">
                <div class="product-short-desc">
                   <h2 class="text-capitalize product-single-title">Perfume</h2>
                   <div class="desc-meta">
@@ -580,6 +606,7 @@
          </div>
       </div>
    </section>
+
 
 
    <!-- start footer section -->
@@ -750,7 +777,7 @@
    </footer>
    <script src="./assets/js/jquery.js"></script>
    <script src="./assets/js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
    <script src="./assets/js/custom.js"></script>
    <script src="./assets/js/custom-slider.js"></script>
 

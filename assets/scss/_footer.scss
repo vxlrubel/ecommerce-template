@@ -41,11 +41,11 @@
     a {
         display: inline-block;
         padding: 5px 0;
-        color: var(--body-color);
+        color: var(--body-color) !important;
         text-decoration: none;
 
         &:hover {
-            color: var(--base-skin);
+            color: var(--base-skin) !important;
         }
     }
 
