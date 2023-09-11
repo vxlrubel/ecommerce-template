@@ -1,22 +1,47 @@
-<ul id="tabsJustified" class="nav nav-tabs nav-fill">
-   <li class="nav-item">
-      <a href="" data-target="#home1" data-toggle="tab">Home</a>
-   </li>
-   <li class="nav-item">
-      <a href="" data-target="#profile1" data-toggle="tab">Profile</a>
-   </li>
-   <li class="nav-item">
-      <a href="" data-target="#messages1" data-toggle="tab">Messages</a>
-   </li>
-</ul>
-<div id="tabsJustifiedContent" class="tab-content">
-   <div id="home1" class="tab-pane fade">
-      Home
-   </div>
-   <div id="profile1" class="tab-pane fade active show">
-      profile 1
-   </div>
-   <div id="messages1" class="tab-pane fade">
-      message 1
-   </div>
+<div class="col-lg-6">
+   <form class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg" action="./account.html" method="post">
+      <p>
+         <label for="b-email">Email Address</label>
+         <input type="email" class="form-control radius-lg" id="b-email">
+      </p>
+      <p>
+         <label for="b-first-name">First Name</label>
+         <input type="text" class="form-control radius-lg" id="b-first-name">
+      </p>
+      <p>
+         <label for="b-last-name">Last Name</label>
+         <input type="text" class="form-control radius-lg" id="b-last-name">
+      </p>
+      <p>
+         <label for="b-address1">Address 1</label>
+         <textarea id="b-address1" class="form-control radius-lg"></textarea>
+      </p>
+      <p>
+         <label for="b-address2">Address 1</label>
+         <textarea id="b-address2" class="form-control radius-lg"></textarea>
+      </p>
+      <p>
+         <label for="b-country">Country</label>
+         <input type="text" id="b-country" class="form-control radius-lg">
+      </p>
+      <p>
+         <label for="b-zip">Zip Code</label>
+         <input type="text" id="b-zip" class="form-control radius-lg">
+      </p>
+      <p>
+         <label for="b-city">City</label>
+         <input type="text" id="b-city" class="form-control radius-lg">
+      </p>
+      <p>
+         <label for="b-state">State</label>
+         <input type="text" id="b-state" class="form-control radius-lg">
+      </p>
+      <p>
+         <label for="b-phone">Phone Number</label>
+         <input type="text" class="form-control radius-lg" id="b-phone">
+      </p>
+      <p>
+         <a href="#" class="btn btn-theme radius-lg fz-12 px-4">Edit Address</a>
+      </p>
+   </form>
 </div>

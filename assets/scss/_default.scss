@@ -41,3 +41,16 @@
         margin-left: 10px;
     }
 }
+
+.responsive-title {
+    font-family: 'Satoshi-Medium', sans-serif;
+    font-size: 18px;
+
+    @include media('tablet') {
+        font-size: 20px;
+    }
+
+    @include media('laptop') {
+        font-size: 25px;
+    }
+}

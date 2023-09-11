@@ -1,8 +1,10 @@
 .account-details {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
     .nav-tabs {
-        width: 300px;
+        width: 100%;
 
         li {
             display: flex;
@@ -31,10 +33,29 @@
         li:not(:last-child) {
             border-bottom-width: 0;
         }
+
+        @include media('phone') {
+            width: 200px;
+        }
     }
 
     .tab-content {
-        width: calc(100% - 300px);
-        padding-left: 30px;
+        width: 100%;
+
+        @include media('phone') {
+            width: calc(100% - 200px);
+        }
+
+        a {
+            color: var(--base-skin);
+        }
+
+        li.active {
+            a.page-link {
+                background-color: var(--base-skin);
+                box-shadow: none;
+                border: 0;
+            }
+        }
     }
 }
