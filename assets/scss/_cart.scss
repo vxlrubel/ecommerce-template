@@ -60,52 +60,7 @@
                 padding: 0;
             }
 
-            .increse_decrese {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid var(--base-border);
 
-                input {
-                    height: 30px;
-                    width: 40px;
-                    text-align: center;
-                }
-
-                input[type="number"]::-webkit-inner-spin-button,
-                input[type="number"]::-webkit-outer-spin-button {
-                    -webkit-appearance: none;
-                    appearance: none;
-                    margin: 0;
-                }
-
-                input[type="number"] {
-                    appearance: none;
-                    -moz-appearance: textfield;
-                }
-
-                a {
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 30px;
-                    width: 30px;
-                    text-decoration: none;
-                    color: var(--body-color);
-                    font-size: 12px;
-                    background-color: #dfe6e9;
-                }
-
-                * {
-                    border: none;
-                    box-shadow: none;
-                    outline: 0;
-                }
-
-                >*:not(:last-child) {
-                    border-right: 1px solid var(--base-border);
-                }
-            }
         }
 
         .items-remove {
@@ -175,5 +130,52 @@
         p {
             color: rgba(43, 40, 38, 0.5);
         }
+    }
+}
+
+.increse_decrese {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--base-border);
+
+    input {
+        height: 30px;
+        width: 40px;
+        text-align: center;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        appearance: none;
+        -moz-appearance: textfield;
+    }
+
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        text-decoration: none;
+        color: var(--body-color);
+        font-size: 12px;
+        background-color: #dfe6e9;
+    }
+
+    * {
+        border: none;
+        box-shadow: none;
+        outline: 0;
+    }
+
+    >*:not(:last-child) {
+        border-right: 1px solid var(--base-border);
     }
 }

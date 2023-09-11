@@ -1,0 +1,168 @@
+.page-header-title {
+    position: relative;
+    background-image: url(https://en-ae.ajmal.com/Floral-eeQ.png);
+    background-position: right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+
+    @include media('tablet') {
+        min-height: 200px;
+    }
+
+    @include media('laptop') {
+        min-height: 250px;
+    }
+
+    .overlay {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+
+        .page-title {
+            text-align: center;
+            font-family: 'Satoshi-Medium', sans-serif;
+            font-size: 20px;
+
+            @include media('phone') {
+                font-size: 23px;
+            }
+
+            @include media('tablet') {
+                font-size: 28px;
+            }
+
+            @include media('laptop') {
+                font-size: 35px;
+            }
+
+            @include media('desktop') {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.product-page {
+    .addProduct {
+        left: 15px;
+        right: 15px;
+    }
+
+    .pagination {
+        .page-link {
+            color: var(--base-body);
+
+            &:hover {
+                background-color: var(--base-skin);
+                color: var(--base-white) !important;
+            }
+        }
+
+    }
+}
+
+.product-search-form {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 35px;
+    // border: 1px solid var(--base-skin);
+    margin: 30px auto;
+    background-color: #dfe6e9;
+    border-radius: 20px;
+
+    @include media('tablet') {
+        max-width: 720px;
+    }
+
+    @include media('laptop') {
+        max-width: 960px;
+    }
+
+    * {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 38px;
+        border: none;
+        background-color: var(--base-white);
+        padding: 0 25px;
+        box-shadow: none;
+        outline: 0;
+        border-radius: 20px;
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+
+        @include media('tablet') {
+            width: 200px;
+        }
+    }
+
+    input[type="text"] {
+        @include media('tablet') {
+            width: calc(100% - 380px);
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: var(--base-skin);
+        color: var(--base-white);
+
+        @include media('tablet') {
+            width: 130px;
+        }
+    }
+}
+
+// product single 
+.product-single-title {
+    font-size: 22px;
+    font-family: 'satoshi-medium', sans-serif;
+
+    @include media('phone') {
+        font-size: 28px;
+    }
+
+    @include media('tablet') {
+        font-size: 32px;
+    }
+
+    @include media('laptop') {
+        font-size: 36px;
+    }
+}
+
+h2.price {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'satoshi-medium', sans-serif;
+
+    @include media('phone') {
+        font-size: 20px;
+    }
+
+    @include media('tablet') {
+        font-size: 22px;
+    }
+
+    @include media('laptop') {
+        font-size: 28px;
+    }
+}

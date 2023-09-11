@@ -518,14 +518,14 @@
 
    </header>
    <!-- end header section  -->
-   <section class="clearfix account-page">
+   <section class="clearfix account-page py-4">
       <div class="container">
          <div class="row">
             <div class="col-12">
                <div class="account-details">
                   <ul id="tabsJustified" class="nav nav-tabs">
                      <li>
-                        <a href="#" data-target="#dashboard" data-toggle="tab">Home</a>
+                        <a href="#" data-target="#dashboard" data-toggle="tab">Dashboard</a>
                      </li>
                      <li>
                         <a href="#" data-target="#orders" data-toggle="tab">orders</a>
@@ -548,7 +548,68 @@
                   </ul>
                   <div id="tabsJustifiedContent" class="tab-content pl-sm-4 mt-3 mt-sm-0">
                      <div id="dashboard" class="tab-pane fade active show">
-                        dashboard
+                        <p>Hello Rubel (not Rubel? <a href="#">Log out</a>)</p>
+                        <p>From your account dashboard you can view your recent orders, manage your
+                           shipping and billing addresses, and edit your password and account details.
+
+                        </p>
+
+                        <div class="row">
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-brands fa-dropbox"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Dashboard</a></p>
+                              </div>
+                           </div>
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Download</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Address</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-regular fa-user"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Account Details</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-regular fa-heart"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Wishlist</a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="col-6 col-lg-4">
+                              <div class="text-center border p-3 dashboard-item radius-lg">
+                                 <div class="dash-thumb">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                 </div>
+                                 <p><a href="#" class="text-dark">Logout</a>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+
                      </div>
                      <div id="orders" class="tab-pane fade">
                         <div class="row">
@@ -953,9 +1014,6 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
    <script src="./assets/js/custom.js"></script>
    <script src="./assets/js/custom-slider.js"></script>
-   <script>
-      new DataTable('#ordered-product');
-   </script>
 </body>
 
 </html>

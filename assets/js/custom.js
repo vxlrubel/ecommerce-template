@@ -5,6 +5,7 @@
             this.toggleMenu();
             this.cartItemIncreaseDecrease();
             this.cartItemRemove();
+            this.orderTableList();
         }
 
         /**
@@ -101,6 +102,9 @@
                     }, 200);
                 })
             });
+        }
+        orderTableList() {
+            new DataTable('#ordered-product');
         }
     }
 

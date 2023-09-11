@@ -9,10 +9,6 @@
         font-size: 18px;
         border: 1px solid var(--base-border);
         border-radius: 5px;
-
-        &:hover {
-            color: var(--base-white) !important;
-        }
     }
 
     a:not(:last-child) {
@@ -20,48 +16,53 @@
     }
 
     a.facebook {
-        color: #1877F2;
-        border-color: #1877F2;
+        color: #1877F2 !important;
+        border-color: #1877F2 !important;
 
         &:hover {
-            background-color: #1877F2;
+            background-color: #1877F2 !important;
+            color: var(--base-white) !important;
         }
     }
 
     a.twitter {
-        color: #1d9bf0;
-        border-color: #1d9bf0;
+        color: #1d9bf0 !important;
+        border-color: #1d9bf0 !important;
 
         &:hover {
-            background-color: #1d9bf0;
+            background-color: #1d9bf0 !important;
+            color: var(--base-white) !important;
         }
     }
 
     a.instagram {
-        color: #F60698;
-        border-color: #F60698;
+        color: #F60698 !important;
+        border-color: #F60698 !important;
 
         &:hover {
-            background: linear-gradient(45deg, #6F17FF, #F60698);
+            background: linear-gradient(45deg, #6F17FF, #F60698) !important;
+            color: var(--base-white) !important;
 
         }
     }
 
     a.linkedin {
-        color: #0C61BF;
-        border-color: #0C61BF;
+        color: #0C61BF !important;
+        border-color: #0C61BF !important;
 
         &:hover {
-            background-color: #0C61BF;
+            background-color: #0C61BF !important;
+            color: var(--base-white) !important;
         }
     }
 
     a.youtube {
-        color: #F70000;
-        border-color: #F70000;
+        color: #F70000 !important;
+        border-color: #F70000 !important;
 
         &:hover {
-            background-color: #F70000;
+            background-color: #F70000 !important;
+            color: var(--base-white) !important;
         }
     }
 }

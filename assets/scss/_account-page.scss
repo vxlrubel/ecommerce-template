@@ -57,5 +57,29 @@
                 border: 0;
             }
         }
+
+        .dashboard-item {
+            margin-bottom: 30px;
+
+            .dash-thumb {
+                display: inline-flex;
+                height: 100px;
+                width: 100px;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                font-size: 40px;
+                color: var(--base-skin);
+
+                i {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            &:hover .dash-thumb i {
+                transform: scale(1.1);
+            }
+        }
+
     }
 }

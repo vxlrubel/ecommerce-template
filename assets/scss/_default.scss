@@ -54,3 +54,15 @@
         font-size: 25px;
     }
 }
+
+a {
+    color: var(--base-skin) !important;
+
+    &:hover {
+        color: var(--base-skin-deep) !important;
+    }
+}
+
+.border-theme {
+    border-color: var(--base-skin) !important;
+}
