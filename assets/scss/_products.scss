@@ -191,9 +191,17 @@ swiper-slide img {
 
 swiper-container {
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
+
+    @include media('phone') {
+        height: 250px;
+    }
+
+    @include media('tablet') {
+        height: 300px;
+    }
 }
 
 swiper-slide {
@@ -202,8 +210,16 @@ swiper-slide {
 }
 
 .mySwiper {
-    max-height: 400px;
+    height: 200px;
     width: 100%;
+
+    @include media('phone') {
+        height: 250px;
+    }
+
+    @include media('tablet') {
+        height: 300px;
+    }
 }
 
 .mySwiper2 {
@@ -225,4 +241,9 @@ swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.reviewer {
+    font-family: 'satoshi-medium', sans-serif;
+    font-size: 18px;
 }

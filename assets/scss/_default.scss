@@ -56,10 +56,10 @@
 }
 
 a {
-    color: var(--base-skin) !important;
+    color: var(--base-skin);
 
     &:hover {
-        color: var(--base-skin-deep) !important;
+        color: var(--base-skin-deep);
     }
 }
 

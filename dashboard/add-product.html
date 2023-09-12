@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en" data-menu="vertical" data-nav-size="nav-default">
+
+<!-- Mirrored from html.digiboard.codebasket.xyz/add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 07:40:31 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product | Digiboard</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/jquery.uploader.css">
+    <link rel="stylesheet" href="assets/vendor/css/select2.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap-material-datetimepicker.css">
+    <link rel="stylesheet" href="assets/vendor/css/material-icon.css">
+    <link rel="stylesheet" href="assets/vendor/css/selectize.css">
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" id="primaryColor" href="assets/css/blue-color.css">
+    <link rel="stylesheet" id="rtlStyle" href="#">
+</head>
+
+<body class="body-padding body-p-top">
+    <!-- preloader start -->
+    <div class="preloader d-none">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header start -->
+    <div class="header">
+        <div class="row g-0 align-items-center">
+            <div class="col-xxl-6 col-xl-5 col-4 d-flex align-items-center gap-20">
+                <div class="main-logo d-lg-block d-none">
+                    <div class="logo-big">
+                        <a href="index.html">
+                            <img src="assets/images/logo-big.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="logo-small">
+                        <a href="index.html">
+                            <img src="assets/images/logo-small.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-close-btn">
+                    <button id="navClose"><i class="fa-light fa-bars-sort"></i></button>
+                </div>
+                <a href="#" target="_blank" class="btn btn-sm btn-primary site-view-btn"><i
+                        class="fa-light fa-globe me-1"></i> <span>View Website</span></a>
+            </div>
+            <div class="col-4 d-lg-none">
+                <div class="mobile-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-big.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-7 col-lg-8 col-4">
+                <div class="header-right-btns d-flex justify-content-end align-items-center">
+                    <div class="header-collapse-group">
+                        <div class="header-right-btns d-flex justify-content-end align-items-center p-0">
+                            <form class="header-form">
+                                <input type="search" name="search" placeholder="Search..." required>
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <div class="header-right-btns d-flex justify-content-end align-items-center p-0">
+                                <div class="lang-select">
+                                    <span>Language:</span>
+                                    <select>
+                                        <option value="">EN</option>
+                                        <option value="">BN</option>
+                                        <option value="">FR</option>
+                                    </select>
+                                </div>
+                                <div class="header-btn-box">
+                                    <button class="header-btn" id="messageDropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-light fa-comment-dots"></i>
+                                        <span class="badge bg-danger">3</span>
+                                    </button>
+                                    <ul class="message-dropdown dropdown-menu" aria-labelledby="messageDropdown">
+                                        <li>
+                                            <a href="#" class="d-flex">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar.png" alt="image">
+                                                </div>
+                                                <div class="msg-txt">
+                                                    <span class="name">Archer Cowie</span>
+                                                    <span class="msg-short">There are many variations of passages of
+                                                        Lorem Ipsum.</span>
+                                                    <span class="time">2 Hours ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-2.png" alt="image">
+                                                </div>
+                                                <div class="msg-txt">
+                                                    <span class="name">Cody Rodway</span>
+                                                    <span class="msg-short">There are many variations of passages of
+                                                        Lorem Ipsum.</span>
+                                                    <span class="time">2 Hours ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-3.png" alt="image">
+                                                </div>
+                                                <div class="msg-txt">
+                                                    <span class="name">Zane Bain</span>
+                                                    <span class="msg-short">There are many variations of passages of
+                                                        Lorem Ipsum.</span>
+                                                    <span class="time">2 Hours ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="show-all-btn">Show all message</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-btn-box">
+                                    <button class="header-btn" id="notificationDropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-light fa-bell"></i>
+                                        <span class="badge bg-danger">9+</span>
+                                    </button>
+                                    <ul class="notification-dropdown dropdown-menu"
+                                        aria-labelledby="notificationDropdown">
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon text-primary"><i
+                                                            class="fa-solid fa-thumbs-up"></i></span> <span
+                                                        class="fw-bold">Archer</span> Likes your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-2.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon text-success"><i
+                                                            class="fa-solid fa-comment-dots"></i></span> <span
+                                                        class="fw-bold">Cody</span> Commented on your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-3.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon"><i
+                                                            class="fa-solid fa-share"></i></span> <span
+                                                        class="fw-bold">Zane</span> Shared your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-4.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon text-primary"><i
+                                                            class="fa-solid fa-thumbs-up"></i></span> <span
+                                                        class="fw-bold">Christopher</span> Likes your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-5.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon text-success"><i
+                                                            class="fa-solid fa-comment-dots"></i></span> <span
+                                                        class="fw-bold">Charlie</span> Commented on your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                <div class="avatar">
+                                                    <img src="assets/images/avatar-6.png" alt="image">
+                                                </div>
+                                                <div class="notification-txt">
+                                                    <span class="notification-icon"><i
+                                                            class="fa-solid fa-share"></i></span> <span
+                                                        class="fw-bold">Jayden</span> Shared your post
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="show-all-btn">Show all message</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-btn-box">
+                                    <div class="dropdown">
+                                        <button class="header-btn" data-bs-toggle="dropdown"
+                                            data-bs-auto-close="outside" aria-expanded="false">
+                                            <i class="fa-light fa-calculator"></i>
+                                        </button>
+                                        <ul class="dropdown-menu calculator-dropdown">
+                                            <div class="dgb-calc-box">
+                                                <div>
+                                                    <input type="text" id="dgbCalcResult" placeholder="0"
+                                                        autocomplete="off" readonly>
+                                                </div>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bg-danger">C</td>
+                                                            <td class="bg-secondary">CE</td>
+                                                            <td class="dgb-calc-oprator bg-primary">/</td>
+                                                            <td class="dgb-calc-oprator bg-primary">*</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td class="dgb-calc-oprator bg-primary">-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                            <td>6</td>
+                                                            <td class="dgb-calc-oprator bg-primary">+</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td rowspan="2" class="dgb-calc-sum bg-primary">=</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">0</td>
+                                                            <td>.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="header-btn fullscreen-btn" id="btnFullscreen"><i
+                                        class="fa-light fa-expand"></i></button>
+                                <button class="header-btn theme-color-btn"><i
+                                        class="fa-light fa-sun-bright"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="header-btn header-collapse-group-btn d-lg-none"><i
+                            class="fa-light fa-ellipsis-vertical"></i></button>
+                    <button class="header-btn theme-settings-btn d-lg-none"><i class="fa-light fa-gear"></i></button>
+                    <div class="header-btn-box profile-btn-box">
+                        <button class="profile-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/admin.png" alt="image">
+                        </button>
+                        <ul class="dropdown-menu profile-dropdown-menu">
+                            <li>
+                                <div class="dropdown-txt text-center">
+                                    <p class="mb-0">Shaikh Abu Dardah</p>
+                                    <span class="d-block">Web Developer</span>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="form-check pt-3">
+                                            <input class="form-check-input" type="checkbox" id="seeProfileAsSidebar">
+                                            <label class="form-check-label" for="seeProfileAsSidebar">See as
+                                                sidebar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="view-profile.html"><span class="dropdown-icon"><i
+                                            class="fa-regular fa-circle-user"></i></span> Profile</a></li>
+                            <li><a class="dropdown-item" href="chat.html"><span class="dropdown-icon"><i
+                                            class="fa-regular fa-message-lines"></i></span> Message</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="dropdown-icon"><i
+                                            class="fa-regular fa-circle-question"></i></span> Help</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><span class="dropdown-icon"><i
+                                            class="fa-regular fa-gear"></i></span> Settings</a></li>
+                            <li><a class="dropdown-item" href="login.html"><span class="dropdown-icon"><i
+                                            class="fa-regular fa-arrow-right-from-bracket"></i></span> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- profile right sidebar start -->
+    <div class="profile-right-sidebar">
+        <button class="right-bar-close"><i class="fa-light fa-angle-right"></i></button>
+        <div class="top-panel">
+            <div class="profile-content scrollable">
+                <ul>
+                    <li>
+                        <div class="dropdown-txt text-center">
+                            <p class="mb-0">Shaikh Abu Dardah</p>
+                            <span class="d-block">Web Developer</span>
+                            <div class="d-flex justify-content-center">
+                                <div class="form-check pt-3">
+                                    <input class="form-check-input" type="checkbox" id="seeProfileAsDropdown">
+                                    <label class="form-check-label" for="seeProfileAsDropdown">See as dropdown</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="view-profile.html"><span class="dropdown-icon"><i
+                                    class="fa-regular fa-circle-user"></i></span> Profile</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="chat.html"><span class="dropdown-icon"><i
+                                    class="fa-regular fa-message-lines"></i></span> Message</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="task.html"><span class="dropdown-icon"><i
+                                    class="fa-regular fa-calendar-check"></i></span> Taskboard</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><span class="dropdown-icon"><i
+                                    class="fa-regular fa-circle-question"></i></span> Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-panel">
+            <div class="button-group">
+                <a href="edit-profile.html"><i class="fa-light fa-gear"></i><span>Settings</span></a>
+                <a href="login.html"><i class="fa-light fa-power-off"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- profile right sidebar end -->
+
+    <div class="right-sidebar-btn d-lg-block d-none">
+        <button class="header-btn theme-settings-btn"><i class="fa-light fa-gear"></i></button>
+    </div>
+
+    <!-- right sidebar start -->
+    <div class="right-sidebar">
+        <button class="right-bar-close"><i class="fa-light fa-angle-right"></i></button>
+        <div class="sidebar-title">
+            <h3>Layout Settings</h3>
+        </div>
+        <div class="sidebar-body scrollable">
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Nav Position <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div class="settings-row">
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded active" id="verticalMenu">
+                            <div class="pb-2 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="border border-primary mb-1">
+                                    <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                    <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                </div>
+                                <div class="border border-primary">
+                                    <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                    <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Vertical</span>
+                        </div>
+                    </div>
+                    <div class="settings-col d-lg-block d-none">
+                        <div class="dashboard-icon d-flex h-100 gap-1 border rounded" id="horizontalMenu">
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="p-1 bg-menu border-bottom">
+                                        <div class="rounded-circle p-1 bg-nav w-max-content"></div>
+                                    </div>
+                                    <div class="p-1 bg-menu d-flex gap-1 mb-1">
+                                        <div class="w-max-content px-2 pt-1 rounded bg-nav"></div>
+                                        <div class="w-max-content px-2 pt-1 rounded bg-nav"></div>
+                                        <div class="w-max-content px-2 pt-1 rounded bg-nav"></div>
+                                        <div class="w-max-content px-2 pt-1 rounded bg-nav"></div>
+                                    </div>
+                                </div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Horizontal</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded" id="twoColumnMenu">
+                            <div class="p-1 bg-menu"></div>
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Two column</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded" id="flushMenu">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Flush</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Theme Direction <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div>
+                    <div class="btn-group d-flex">
+                        <button class="btn btn-primary active w-50" id="dirLtr">LTR</button>
+                        <button class="btn btn-primary w-50" id="dirRtl">RTL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Primary Color <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div class="settings-row-2">
+                    <button class="color-palette color-palette-1 active" data-color="blue-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-2" data-color="orange-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-3" data-color="pink-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-4" data-color="eagle_green-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-5" data-color="purple-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-6" data-color="gold-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-7" data-color="green-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-8" data-color="deep_pink-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-9" data-color="tea_green-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="color-palette color-palette-10" data-color="yellow_green-color">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Theme Color <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div class="settings-row">
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex bg-blue-theme gap-1 border rounded active" id="blueTheme">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Blue Theme</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded bg-body-secondary light-theme-btn"
+                            id="lightTheme">
+                            <div class="pb-4 px-1 pt-1 bg-dark-subtle">
+                                <div class="px-2 py-1 rounded-pill bg-primary mb-2"></div>
+                                <div class="px-2 pt-1 bg-primary mb-1"></div>
+                                <div class="px-2 pt-1 bg-primary mb-1"></div>
+                                <div class="px-2 pt-1 bg-primary mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-dark-subtle"></div>
+                                <div class="px-2 py-1 bg-dark-subtle"></div>
+                            </div>
+                            <span class="part-txt">Light Theme</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded bg-dark" id="darkTheme">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Dark Theme</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group" id="navBarSizeGroup">
+                <span class="sidebar-subtitle">Navbar Size <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div class="settings-row">
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded active" id="sidebarDefault">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Default</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded" id="sidebarSmall">
+                            <div class="pb-4 pt-1 bg-menu">
+                                <div class="p-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Small icon</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded" id="sidebarHover">
+                            <div class="pb-4 pt-1 bg-menu">
+                                <div class="p-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                                <div class="ps-1 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Expand on hover</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Sidebar Background <span><i
+                            class="fa-light fa-angle-up"></i></span></span>
+                <div>
+                    <div class="sidebar-bg-btn-box">
+                        <button id="noBackground">
+                            <span><i class="fa-light fa-xmark"></i></span>
+                        </button>
+                        <button class="sidebar-bg-btn" data-img="assets/images/nav-bg-1.jpg"></button>
+                        <button class="sidebar-bg-btn" data-img="assets/images/nav-bg-2.jpg"></button>
+                        <button class="sidebar-bg-btn" data-img="assets/images/nav-bg-3.jpg"></button>
+                        <button class="sidebar-bg-btn" data-img="assets/images/nav-bg-4.jpg"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Main Background <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div>
+                    <div class="main-content-bg-btn-box">
+                        <button id="noBackground2">
+                            <span><i class="fa-light fa-xmark"></i></span>
+                        </button>
+                        <button class="main-content-bg-btn" data-img="assets/images/main-bg-1.jpg"></button>
+                        <button class="main-content-bg-btn" data-img="assets/images/main-bg-2.jpg"></button>
+                        <button class="main-content-bg-btn" data-img="assets/images/main-bg-3.jpg"></button>
+                        <button class="main-content-bg-btn" data-img="assets/images/main-bg-4.jpg"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar-group">
+                <span class="sidebar-subtitle">Main preloader <span><i class="fa-light fa-angle-up"></i></span></span>
+                <div class="settings-row">
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded" id="enableLoader">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <div class="preloader-small">
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <span class="part-txt">Enable</span>
+                        </div>
+                    </div>
+                    <div class="settings-col">
+                        <div class="dashboard-icon d-flex gap-1 border rounded active" id="disableLoader">
+                            <div class="pb-4 px-1 pt-1 bg-menu">
+                                <div class="px-2 py-1 rounded-pill bg-nav mb-2"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                                <div class="px-2 pt-1 bg-nav mb-1"></div>
+                            </div>
+                            <div class="w-100 d-flex flex-column justify-content-between">
+                                <div class="px-2 py-1 bg-menu"></div>
+                                <div class="px-2 py-1 bg-menu"></div>
+                            </div>
+                            <span class="part-txt">Disable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- right sidebar end -->
+
+    <!-- main sidebar start -->
+    <div class="main-sidebar">
+        <div class="main-menu">
+            <ul class="sidebar-menu scrollable">
+                <li class="sidebar-item open">
+                    <a href="index.html" role="button" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon">
+                            <i class="fa-light fa-house"></i>
+                        </span>
+                        <span class="sidebar-txt">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="charts.html" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon">
+                            <i class="fa-light fa-chart-simple"></i>
+                        </span>
+                        <span class="sidebar-txt">Chart</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="all-customer.html" role="button" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon">
+                            <i class="fa-light fa-user"></i>
+                        </span>
+                        <span class="sidebar-txt">Customer</span>
+                    </a>
+                </li>
+
+
+                <li class="sidebar-item">
+                    <a role="button" class="sidebar-link-group-title has-sub">
+                        <span class="nav-icon">
+                            <i class="fa-light fa-memo-pad"></i>
+                        </span>
+                        <span class="sidebar-txt">Pages</span>
+                    </a>
+                    <ul class="sidebar-link-group">
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="login-2.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-memo-pad"></i></span>
+                                <span class="sidebar-txt">Login</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="registration-2.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-memo-pad"></i></span>
+                                <span class="sidebar-txt">Registration</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="reset-password.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-memo-pad"></i></span>
+                                <span class="sidebar-txt">Reset Password</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="update-password.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-memo-pad"></i></span>
+                                <span class="sidebar-txt">Update Password</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="login-status.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-memo-pad"></i></span>
+                                <span class="sidebar-txt">Login Status</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a role="button" class="sidebar-link-group-title has-sub">
+                        <span class="nav-icon">
+                            <i class="fa-light fa-cart-shopping-fast"></i>
+                        </span>
+                        <span class="sidebar-txt">Products</span>
+                    </a>
+                    <ul class="sidebar-link-group">
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="all-product.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-cart-shopping-fast"></i></span>
+                                <span class="sidebar-txt">All Products</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="add-product.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-square-plus"></i></span>
+                                <span class="sidebar-txt">Add Product</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="category.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-cart-shopping-fast"></i></span>
+                                <span class="sidebar-txt">Category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="order.html" class="sidebar-link">
+                                <span class="nav-icon"><i class="fa-light fa-cart-shopping-fast"></i></span>
+                                <span class="sidebar-txt">Order</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="chat.html" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon"><i class="fa-light fa-messages"></i></span>
+                        <span class="sidebar-txt">Chat</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="email.html" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon"><i class="fa-light fa-envelope"></i></span>
+                        <span class="sidebar-txt">Email</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="invoices.html" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon"><i class="fa-light fa-file-invoice"></i></span>
+                        <span class="sidebar-txt">Invoice</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="calendar.html" class="sidebar-link-group-title remove-icon">
+                        <span class="nav-icon"><i class="fa-light fa-calendar"></i></span>
+                        <span class="sidebar-txt">Calender</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a role="button" class="sidebar-link-group-title has-sub">
+                        <span class="nav-icon"><i class="fa-light fa-user"></i></span>
+                        <span class="sidebar-txt">Users</span>
+                    </a>
+                    <ul class="sidebar-link-group">
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="view-profile.html" class="sidebar-link">
+                                <span class="nav-icon">
+                                    <i class="fa-light fa-file-invoice"></i>
+                                </span>
+                                <span class="sidebar-txt">View Profile</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-dropdown-item">
+                            <a href="edit-profile.html" class="sidebar-link">
+                                <span class="nav-icon">
+                                    <i class="fa-light fa-file-invoice"></i>
+                                </span>
+                                <span class="sidebar-txt">Edit Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- main sidebar end -->
+
+    <!-- main content start -->
+    <div class="main-content">
+        <div class="dashboard-breadcrumb mb-25">
+            <h2>Add New Product</h2>
+            <div class="btn-box">
+                <a href="all-product.html" class="btn btn-sm btn-primary">View All</a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-xxl-9 col-lg-8">
+                <div class="panel mb-25">
+                    <div class="panel-body product-title-input">
+                        <label class="form-label">Write Title</label>
+                        <input type="text" class="form-control" id="productTitle" placeholder="Title for product">
+                        <p class="perma-txt" hidden>
+                            Permalink: <span data-link="https://example.com/" class="site-link text-primary"
+                                id="productPermalink">https://example.com/</span><input type="text"
+                                class="form-control form-control-sm" hidden id="editPermalink">
+                            <button class="btn-flush bg-primary" id="editPermaBtn">Edit</button>
+                            <button class="btn-flush bg-success" id="createPerma" hidden>OK</button>
+                            <button class="btn-flush bg-danger" id="cancelPerma" hidden>Cancel</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel mb-25">
+                    <div class="panel-header">
+                        <h5>Product Description</h5>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="editor"></div>
+                    </div>
+                </div>
+                <div class="panel mb-25">
+                    <div class="panel-header">
+                        <h5>Product Data</h5>
+                        <div class="panel-header-right">
+                            <div class="form-check d-flex gap-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="generalProductData">
+                                    <label class="form-check-label" for="generalProductData">
+                                        General
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="DownloadableProductData">
+                                    <label class="form-check-label" for="DownloadableProductData">
+                                        Downloadable
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <nav>
+                            <div class="btn-box d-flex flex-wrap gap-1 mb-25" id="nav-tab" role="tablist">
+                                <button class="btn btn-sm btn-outline-primary active" id="nav-media-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-media" type="button" role="tab"
+                                    aria-controls="nav-media" aria-selected="true">Media</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-inventory-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-inventory" type="button" role="tab"
+                                    aria-controls="nav-inventory" aria-selected="false">Inventory</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-price-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-price" type="button" role="tab" aria-controls="nav-price"
+                                    aria-selected="false">Price</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-attribute-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-attribute" type="button" role="tab"
+                                    aria-controls="nav-attribute" aria-selected="false">Attribute</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-shipping-info-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-shipping-info" type="button" role="tab"
+                                    aria-controls="nav-shipping-info" aria-selected="false">Shipping info</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-video-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video"
+                                    aria-selected="false">Video</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-shipping-configuration-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-shipping-configuration" type="button"
+                                    role="tab" aria-controls="nav-shipping-configuration" aria-selected="false">Shipping
+                                    Configuration</button>
+                                <button class="btn btn-sm btn-outline-primary" id="nav-offer-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-offer" type="button" role="tab" aria-controls="nav-offer"
+                                    aria-selected="false">Offer</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content product-data-tab" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-media" role="tabpanel"
+                                aria-labelledby="nav-media-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-md-4 col-5 col-xs-12">
+                                        <div class="add-thumbnail product-image-upload">
+                                            <div class="part-txt">
+                                                <h5>Add thumbnail <span>(jpeg/png)</span></h5>
+                                            </div>
+                                            <input type="text" class="image-input" id="thumbUpload">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-9 col-md-8 col-7 col-xs-12">
+                                        <div class="add-gallery-img product-image-upload">
+                                            <div class="part-txt">
+                                                <h5>Add gallery <span>(jpeg/png)</span></h5>
+                                            </div>
+                                            <input type="text" class="image-input" id="galleryUpload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-inventory" role="tabpanel"
+                                aria-labelledby="nav-inventory-tab" tabindex="0">
+                                <form>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">SKU <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control form-control-sm" id="SKU">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Manage Stock?</label>
+                                        <div class="col-md-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="manageStock">
+                                                <label class="form-check-label" for="manageStock">
+                                                    Manage stock level (quantity)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Stock Status <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <select class="form-control form-control-sm">
+                                                <option value="0">In stock</option>
+                                                <option value="1">Out of stock</option>
+                                                <option value="2">On backorder</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Sold individually <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="soldIndividually">
+                                                <label class="form-check-label" for="soldIndividually">
+                                                    Limit purchases to 1 item per order
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Product Code <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control form-control-sm" id="productCode">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="lowStockWarning"
+                                            class="col-md-2 col-form-label col-form-label-sm">Low Stock Warning</label>
+                                        <div class="col-md-10">
+                                            <input type="number" class="form-control form-control-sm"
+                                                id="lowStockWarning">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="showStockQuantity"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Show Stock
+                                            Quantity</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="showStockQuantity">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="showStockWithText"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Show Stock With
+                                            Text</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="showStockWithText">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3">
+                                        <label for="hideStock"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Hide Stock</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="hideStock">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-price" role="tabpanel" aria-labelledby="nav-price-tab"
+                                tabindex="0">
+                                <form>
+                                    <div class="row g-3 mb-3">
+                                        <label for="regularPrice"
+                                            class="col-md-2 col-form-label col-form-label-sm">Regular Price ($)</label>
+                                        <div class="col-md-10">
+                                            <input type="number" class="form-control form-control-sm" id="regularPrice">
+                                        </div>
+                                    </div>
+                                    <div class="row g-3 mb-3">
+                                        <label for="salePrice"
+                                            class="col-md-2 col-form-label col-form-label-sm">Discount ($)</label>
+                                        <div class="col-md-8">
+                                            <input type="number" class="form-control form-control-sm" id="salePrice">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-control-sm p-0">
+                                                <select class="form-control form-control-sm">
+                                                    <option value="1">Flat</option>
+                                                    <option value="2">Discount</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-3">
+                                        <label for="PriceDateStart"
+                                            class="col-md-2 col-form-label col-form-label-sm">Sale price dates</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control form-control-sm dateRangePicker"
+                                                id="PriceDateStart" placeholder="DD MMMM YYYY - HH:MM">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control form-control-sm dateRangePicker"
+                                                id="PriceDateEnd" placeholder="DD MMMM YYYY - HH:MM">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-attribute" role="tabpanel"
+                                aria-labelledby="nav-attribute-tab" tabindex="0">
+                                <div class="add-product-attribute">
+                                    <div class="form-group">
+                                        <select class="form-control form-control-sm">
+                                            <option value="">Custom Product Attribute</option>
+                                            <option value="">Brand</option>
+                                            <option value="">Color</option>
+                                            <option value="">Size</option>
+                                        </select>
+                                        <button class="btn btn-sm btn-icon btn-primary" id="addAttr"><i
+                                                class="fa-light fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-shipping-info" role="tabpanel"
+                                aria-labelledby="nav-shipping-info-tab" tabindex="0">
+                                <form>
+                                    <div class="row g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Weight (kg) <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <input type="number" class="form-control form-control-sm" id="weight"
+                                                placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="row g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Dimensions (cm) <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <div class="row g-3">
+                                                <div class="col-md-4">
+                                                    <input type="number" class="form-control form-control-sm"
+                                                        id="Dimensions" placeholder="Length">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="number" class="form-control form-control-sm"
+                                                        placeholder="Width">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="number" class="form-control form-control-sm"
+                                                        placeholder="Height">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Shipping Class <span
+                                                class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                                data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                                    class="fa-solid fa-circle-question"></i></span></label>
+                                        <div class="col-md-10">
+                                            <select class="form-control form-control-sm">
+                                                <option value="0">No Shipping Class</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab"
+                                tabindex="0">
+                                <form>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Video Provider</label>
+                                        <div class="col-md-10">
+                                            <select class="form-control form-control-sm"
+                                                data-placeholder="Select Provider">
+                                                <option value="">Select Provider</option>
+                                                <option value="0">Youtube</option>
+                                                <option value="1">Vimeo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row g-3">
+                                        <label class="col-md-2 col-form-label col-form-label-sm">Video Link</label>
+                                        <div class="col-md-10">
+                                            <input type="url" class="form-control form-control-sm" name="video_link"
+                                                placeholder="Video Link">
+                                            <span class="input-additional-txt">Use proper link without extra parameter.
+                                                Don't use short share link/embeded iframe code.</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-shipping-configuration" role="tabpanel"
+                                aria-labelledby="nav-shipping-configuration-tab" tabindex="0">
+                                <form>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="estimateShippingTime"
+                                            class="col-md-2 col-form-label col-form-label-sm">Estimate Shipping
+                                            Time</label>
+                                        <div class="col-md-10">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control form-control-sm"
+                                                    id="estimateShippingTime">
+                                                <span class="input-group-text">Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="freeShipping"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Free
+                                            Shipping</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="freeShipping">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="flatRate"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Flat Rate</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flatRate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="QuantityMulitiply"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Quantity
+                                            Mulitiply</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="QuantityMulitiply">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3">
+                                        <label for="cashOnDelivery"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Cash On
+                                            Delivery</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="cashOnDelivery">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-offer" role="tabpanel" aria-labelledby="nav-offer-tab"
+                                tabindex="0">
+                                <form>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="flashDeal"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Flash Deal</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flashDeal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3 mb-3">
+                                        <label for="todaysDeal"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Today's Deal</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="todaysDeal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center g-3">
+                                        <label for="featured"
+                                            class="col-md-2 col-8 col-form-label col-form-label-sm">Featured</label>
+                                        <div class="col-md-10 col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="featured">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h5>SEO Data</h5>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="row g-3 mb-3">
+                                <label class="col-xxl-2 col-md-3 col-form-label col-form-label-sm pe-0">Focus keyphrase
+                                    <span class="btn-flush fs-14" data-bs-toggle="tooltip"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><i
+                                            class="fa-solid fa-circle-question"></i></span></label>
+                                <div class="col-xxl-10 col-md-9">
+                                    <input type="text" class="form-control form-control-sm" id="focusKeyphrase">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <label for="metaTitle" class="col-xxl-2 col-md-3 col-form-label col-form-label-sm">Meta
+                                    Title</label>
+                                <div class="col-xxl-10 col-md-9">
+                                    <input type="text" class="form-control form-control-sm" id="metaTitle">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <label for="slugText"
+                                    class="col-xxl-2 col-md-3 col-form-label col-form-label-sm">Slug</label>
+                                <div class="col-xxl-10 col-md-9">
+                                    <input type="text" class="form-control form-control-sm" id="slugText">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <label for="metaDscr" class="col-xxl-2 col-md-3 col-form-label col-form-label-sm">Meta
+                                    Description</label>
+                                <div class="col-xxl-10 col-md-9">
+                                    <textarea class="form-control" rows="5" id="metaDscr"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 add-product-sidebar">
+                <div class="mb-25 w-100">
+                    <a href="#" class="btn btn-primary d-block">Preview Changed</a>
+                </div>
+                <div class="panel mb-25">
+                    <div class="panel-header">
+                        <h5>Published</h5>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label">Status</label>
+                                <select class="form-control form-control-sm">
+                                    <option value="0">Published</option>
+                                    <option value="1">Draft</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Visibility</label>
+                                <select class="form-control form-control-sm">
+                                    <option value="0">Public</option>
+                                    <option value="1">Pass. Protected</option>
+                                    <option value="2">Private</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="publish-date">
+                                    <label>Published on: </label>
+                                    <input class="input-flush" type="text" id="publishDate">
+                                    <label for="publishDate" class="cursor-pointer text-primary"><i
+                                            class="fa-light fa-pen-to-square"></i></label>
+                                </div>
+                                <div class="btn-box d-flex justify-content-end gap-2">
+                                    <button class="btn btn-sm btn-outline-primary">Save</button>
+                                    <button class="btn btn-sm btn-primary">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel mb-25">
+                    <div class="panel-header">
+                        <h5>Category</h5>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form class="input-group-with-icon mb-20">
+                            <span class="input-icon"><i class="fa-light fa-magnifying-glass"></i></span>
+                            <input type="search" placeholder="Search category">
+                        </form>
+                        <div class="product-categories">
+                            <div class="cat-group">
+                                <div class="form-check">
+                                    <input class="form-check-input has-sub" type="checkbox" id="catFinance">
+                                    <label class="form-check-label" for="catFinance">
+                                        Finance <span><i class="fa-light fa-plus"></i></span>
+                                    </label>
+                                </div>
+                                <div class="sub-cat-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="catBanking">
+                                        <label class="form-check-label" for="catBanking">
+                                            Banking
+                                        </label>
+                                    </div>
+                                    <div class="cat-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input has-sub" type="checkbox" id="catAccounting">
+                                            <label class="form-check-label" for="catAccounting">
+                                                Accounting <span><i class="fa-light fa-plus"></i></span>
+                                            </label>
+                                        </div>
+                                        <div class="sub-cat-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="catBangladeshBank">
+                                                <label class="form-check-label" for="catBangladeshBank">
+                                                    BangladeshBank
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat-group">
+                                <div class="form-check">
+                                    <input class="form-check-input has-sub" type="checkbox" id="catFashion">
+                                    <label class="form-check-label" for="catFashion">
+                                        Fashion & Clothing <span><i class="fa-light fa-plus"></i></span>
+                                    </label>
+                                </div>
+                                <div class="sub-cat-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="catTShirt">
+                                        <label class="form-check-label" for="catTShirt">
+                                            t-Shirt
+                                        </label>
+                                    </div>
+                                    <div class="cat-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input has-sub" type="checkbox" id="catShirt">
+                                            <label class="form-check-label" for="catShirt">
+                                                Shirt <span><i class="fa-light fa-plus"></i></span>
+                                            </label>
+                                        </div>
+                                        <div class="sub-cat-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="catCasualShirt">
+                                                <label class="form-check-label" for="catCasualShirt">
+                                                    Casual Shirt
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catBag">
+                                <label class="form-check-label" for="catBag">
+                                    Bag
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catMonitor">
+                                <label class="form-check-label" for="catMonitor">
+                                    Monitor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catKeyboard">
+                                <label class="form-check-label" for="catKeyboard">
+                                    Keyboard
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catMouse">
+                                <label class="form-check-label" for="catMouse">
+                                    Mouse
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top"></div>
+                    <div class="panel-body">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn-flush add-category-btn"><i class="fa-light fa-plus"></i> Add new
+                                category</button>
+                        </div>
+                        <div class="add-new-category-panel">
+                            <form>
+                                <input type="text" class="form-control form-control-sm mb-3"
+                                    placeholder="Category Name">
+                                <select class="form-control form-control-sm mb-3" data-placeholder="Select Parent">
+                                    <option value="">Select Parent</option>
+                                    <option value="0">Finance</option>
+                                    <option value="1">Banking</option>
+                                    <option value="2">Accounting</option>
+                                    <option value="3">Bangladesh Bank</option>
+                                    <option value="4">Fashion & Clothing</option>
+                                    <option value="5">t-Shirt</option>
+                                    <option value="6">Shirt</option>
+                                    <option value="7">Casual Shirt</option>
+                                    <option value="8">Bag</option>
+                                    <option value="9">Monitor</option>
+                                    <option value="10">Keyboard</option>
+                                    <option value="11">Mouse</option>
+                                </select>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-sm btn-primary">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h5>Products Tags</h5>
+                        <div class="btn-box d-flex gap-2">
+                            <button class="btn btn-sm btn-icon btn-outline-primary"><i
+                                    class="fa-light fa-arrows-rotate"></i></button>
+                            <button class="btn btn-sm btn-icon btn-outline-primary panel-close"><i
+                                    class="fa-light fa-angle-up"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="product-tag-area">
+                            <div class="row g-3">
+                                <div class="col-9">
+                                    <input type="text" class="input-flush" id="productTags">
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-sm btn-primary w-100" id="addTags">Add</button>
+                                </div>
+                            </div>
+                            <span class="input-txt">Use commas to separate tags</span>
+                            <div class="all-tags" id="allTags"></div>
+                            <div class="tag-history">
+                                <span class="choose-used-tag input-txt">Choose from most use tags</span>
+                                <div class="all-tags used-tags active">
+                                    <div class="item d-inline-block" data-value="mobile">mobile<span
+                                            class="close-tag"><i class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="tab">tab<span class="close-tag"><i
+                                                class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="watch">watch<span class="close-tag"><i
+                                                class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="t-shirt">t-shirt<span
+                                            class="close-tag"><i class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="shirt">shirt<span class="close-tag"><i
+                                                class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="book">book<span class="close-tag"><i
+                                                class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="monitor">monitor<span
+                                            class="close-tag"><i class="fa-regular fa-xmark"></i></span></div>
+                                    <div class="item d-inline-block" data-value="cloth">cloth<span class="close-tag"><i
+                                                class="fa-regular fa-xmark"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer start -->
+        <div class="footer">
+            <p>Copyright©
+                <script>document.write(new Date().getFullYear())</script> All Rights Reserved By <span
+                    class="text-primary">Digiboard</span>
+            </p>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- main content end -->
+
+    <script src="assets/vendor/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/js/ckeditor.js"></script>
+    <script src="assets/vendor/js/jquery.uploader.min.js"></script>
+    <script src="assets/vendor/js/select2.min.js"></script>
+    <script src="assets/vendor/js/moment.min.js"></script>
+    <script src="assets/vendor/js/bootstrap-material-datetimepicker.js"></script>
+    <script src="assets/vendor/js/selectize.min.js"></script>
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/select2-init.js"></script>
+    <script src="assets/js/add-product.js"></script>
+    <!-- for demo purpose -->
+    <script>
+        var rtlReady = $('html').attr('dir', 'ltr');
+        if (rtlReady !== undefined) {
+            localStorage.setItem('layoutDirection', 'ltr');
+        }
+    </script>
+    <!-- for demo purpose -->
+</body>
+
+<!-- Mirrored from html.digiboard.codebasket.xyz/add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 07:40:33 GMT -->
+
+</html>
