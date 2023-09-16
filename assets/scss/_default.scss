@@ -66,3 +66,14 @@ a {
 .border-theme {
     border-color: var(--base-skin) !important;
 }
+
+.textable {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+    border: none !important;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+}

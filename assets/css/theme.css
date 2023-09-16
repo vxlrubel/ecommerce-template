@@ -10,6 +10,8 @@
     --base-light: #f8f9fa;
     --base-border: #dee2e6;
     --base-border-dark: #777777;
+    --base-header-bg: #6c5ce7;
+    --alpha: rgba(0, 0, 0, 0.3);
 }
 
 *,
