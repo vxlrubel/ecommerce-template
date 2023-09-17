@@ -22,7 +22,7 @@
 <body>
 
    <!-- start header section -->
-   <header class="clearfix header1 position-relative">
+   <header class="clearfix header1">
       <!-- start header top bar -->
       <div class="header-top">
          <div class="container">
@@ -65,20 +65,24 @@
       </div>
       <!-- end header top bar -->
 
-      <!-- start search bar -->
-      <div class="header-search-parent">
-         <form action="index.html" class="form radius-lg overflow-hidden">
-            <button type="button" class="border-0 shadow-none" id="close-search-bar">
-               <i class="fa-solid fa-xmark"></i>
-            </button>
-            <input type="search" placeholder="Enter Keyword" class="border-0 shadow-none">
-            <button type="submit" class="border-0 shadow-none">
-               <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-         </form>
-      </div>
-      <!-- end search bar -->
-      <div class="header-navbar">
+
+      <div class="header-navbar position-relative">
+
+         <!-- search bar start -->
+         <div class="header-search-parent">
+            <form action="index.html" class="form radius-lg overflow-hidden">
+               <button type="button" class="border-0 shadow-none" id="close-search-bar">
+                  <i class="fa-solid fa-xmark"></i>
+               </button>
+               <input type="search" placeholder="Enter Keyword" class="border-0 shadow-none">
+               <button type="submit" class="border-0 shadow-none">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+            </form>
+         </div>
+         <!-- search bar end -->
+
+         <!-- navbar start -->
          <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                <div class="logo">
@@ -167,6 +171,7 @@
 
             </div>
          </div>
+         <!-- navbar end -->
 
          <!-- mobile menu -->
          <div class="d-lg-none py-2" id="mobile-menu1">
@@ -363,14 +368,13 @@
          <a class="whats-app" href="#">
             <i class="fa-brands fa-whatsapp"></i>
          </a>
+      </div>
 
-
-
-
+      <div class="footer-widget1">
          <div class="container">
             <div class="row">
-               <div class="col-md-6 col-lg-4">
-                  <div class="widget-items mb-2">
+               <div class="col-sm-6 col-lg-3 order-sm-3 order-lg-0">
+                  <div class="widget-items mb-3">
                      <div class="text-center text-md-left info-address">
                         <a href="#">
                            <img src="https://en-ae.ajmal.com/media/wysiwyg/logo.png" alt="logo">
@@ -383,10 +387,9 @@
                         </p>
                      </div>
                   </div>
-
                </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="widget-items mb-2">
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-3">
                      <h3 class="widget-title text-center text-md-left">Customer Service</h3>
                      <div class="d-flex justify-content-center justify-content-md-start">
                         <ul class="list-unstyled mr-3 mr-md-4 mr-mgl-5">
@@ -401,8 +404,8 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="widget-items mb-2">
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-3">
                      <h3 class="widget-title text-center text-md-left">Other</h3>
                      <div class="d-flex justify-content-center justify-content-md-start">
                         <ul class="list-unstyled mr-3 mr-md-4 mr-mgl-5">
@@ -413,18 +416,31 @@
                         </ul>
                      </div>
                   </div>
-
                </div>
-               <div class="col-md-6 col-lg-2">
-                  <div class="widget-items mb-2">
-                     <h3 class="widget-title text-center text-md-left">Links</h3>
-                     <ul class="list-unstyled">
-                        <li class="text-center text-md-left"><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li class="text-center text-md-left"><a href="/brand">About us</a></li>
-                     </ul>
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-3">
+                     <h3 class="widget-title text-center text-md-left">Other</h3>
+                     <div class="d-flex justify-content-center justify-content-md-start">
+                        <ul class="list-unstyled mr-3 mr-md-4 mr-mgl-5">
+                           <li class="text-center text-md-left"><a href="/e-gift-card">E-gift card</a></li>
+                           <li class="text-center text-md-left"><a href="/promotion">Promotions</a></li>
+                           <li class="text-center text-md-left"><a href="/loyalty-program">Loyalty program</a>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
-
-
+               </div>
+               <div class="col-sm-6 col-lg-3 order-sm-3">
+                  <div class="widget-items mb-3">
+                     <h2 class="footer-widget-title text-capitalize">newsletter</h2>
+                     <p>Subscribe our Newsletter to get our latest update and news</p>
+                     <form action="#" class="d-flex align-items-center">
+                        <input type="email" placeholder="Email Address" class="border-0 shadow-none">
+                        <button type="submit" class="btn border-0 shadow-none">
+                           <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                     </form>
+                  </div>
                </div>
             </div>
          </div>

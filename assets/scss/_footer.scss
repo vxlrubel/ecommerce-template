@@ -95,3 +95,20 @@
         background-color: #e2ded7;
     }
 }
+
+.footer-widget-title {
+    position: relative;
+    font-family: 'satoshi-medium', sans-serif;
+    font-size: 18px;
+    padding-bottom: 3px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 50px;
+        left: 0;
+        top: 100%;
+        background-color: var(--base-skin);
+    }
+}

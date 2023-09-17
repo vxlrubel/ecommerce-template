@@ -56,15 +56,15 @@
         display: none;
         justify-content: center;
         align-items: center;
-        // background-color: var(--alpha);
-        background-color: var(--base-skin);
+        background-color: var(--bg-primary);
         padding: 0 15px;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
+        max-height: 80px !important;
         z-index: 99999;
-        animation: submenuFadeIn 0.3s linear;
+        animation: fadeinsearch 0.3s linear;
 
         .form {
             background-color: var(--base-white);
@@ -75,9 +75,9 @@
             >* {
                 display: inline-flex;
                 outline: 0;
-                height: 50px;
+                height: 40px;
                 align-items: center;
-                min-width: 50px;
+                min-width: 40px;
                 justify-content: center;
                 background-color: var(--base-white);
             }
@@ -246,5 +246,17 @@
     .shopping-cart-count {
         bottom: calc(100% - 15px);
         left: calc(100% - 15px);
+    }
+}
+
+@keyframes fadeinsearch {
+    0% {
+        opacity: 0;
+        margin-left: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
     }
 }

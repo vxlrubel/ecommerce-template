@@ -172,9 +172,9 @@
                 $(window).on('scroll', function () {
 
                     if ($(this).scrollTop() > headerTopHeight) {
-                        $('.header-navbar').addClass('fixed-top');
+                        $('.header-navbar').addClass('fixed-top').removeClass('position-relative');
                     } else {
-                        $('.header-navbar').removeClass('fixed-top');
+                        $('.header-navbar').removeClass('fixed-top').addClass('position-relative');
                     }
 
                 });
