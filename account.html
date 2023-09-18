@@ -16,8 +16,6 @@
    <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/demo.css">
 
-
-
 </head>
 
 <body>
@@ -288,7 +286,7 @@
 
    </header>
    <!-- end header section  -->
-   <section class="clearfix account-page py-4">
+   <section class="clearfix account-page py-5">
       <div class="container">
          <div class="row">
             <div class="col-12">
@@ -766,12 +764,16 @@
       </div>
 
    </footer>
+
    <script src="./assets/js/jquery.js"></script>
    <script src="./assets/js/bootstrap.min.js"></script>
+   <script src="https://cdn.datatables.net/v/bs4/jq-3.7.0/dt-1.13.6/datatables.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
    <script src="./assets/js/custom.js"></script>
    <script src="./assets/js/custom-slider.js"></script>
-
+   <script>
+      new DataTable('#ordered-product');
+   </script>
 </body>
 
 </html>

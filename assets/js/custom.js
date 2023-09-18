@@ -5,7 +5,6 @@
             this.toggleMenu();
             this.cartItemIncreaseDecrease();
             this.cartItemRemove();
-            // this.orderTableList();
             this.searchToggle();
             this.header1();
         }
@@ -104,9 +103,6 @@
                     }, 200);
                 })
             });
-        }
-        orderTableList() {
-            new DataTable('#ordered-product');
         }
 
         searchToggle() {
