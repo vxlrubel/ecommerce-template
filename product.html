@@ -22,24 +22,35 @@
 <body>
 
    <!-- start header section -->
-   <header class="clearfix header-area">
-      <div class="top-header bg-theme-alpha">
+   <header class="clearfix header1">
+      <!-- start header top bar -->
+      <div class="header-top py-1">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-4">
-                  <div class="text-center text-md-left py-2 p-0">
+                  <div class="text-center text-md-left p-0">
                      <i class="fa-regular fa-envelope"></i>
                      <span class="ml-2">example@domain.com</span>
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="text-center py-2 p-0">
+                  <div class="text-center p-0">
                      <i class="fa-solid fa-phone"></i>
                      <span class="ml-2">+123 987654321</span>
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="text-center text-md-right py-2 p-0">
+                  <div class="p-0 d-flex align-items-center justify-content-md-end justify-content-center">
+                     <div class="d-inline-flex align-items-center px-2 mr-3 radius-sm">
+                        <div class="set-language d-inline-flex align-items-center">
+                           <img src="./assets/img/united_arab_emirates.png" alt="image" width="20" height="20">
+                        </div>
+                        <select class="textable mx-2">
+                           <option value="bangla">Bangla</option>
+                           <option value="english" selected="">English</option>
+                        </select>
+                     </div>
+
                      <div class="d-inline-flex social-share">
                         <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -52,358 +63,118 @@
             </div>
          </div>
       </div>
-      <div class="container header-top pt-4 pb-3">
-         <div class="row">
-            <div class="col-12" class="search-form">
-               <form action="#">
-                  <div class="d-flex position-relative align-items-center border radius-xl top-search-form">
-                     <!-- <i class="fas fa-magnifying-glass"></i> -->
-                     <input type="search" class="form-control">
-                     <!-- <i class="fa-solid fa-microphone search-icon-voice"></i> -->
-                     <i class="fas fa-magnifying-glass"></i>
-                  </div>
-               </form>
-            </div>
-         </div>
+      <!-- end header top bar -->
+
+
+      <!-- search bar start -->
+      <div class="header-search-parent show">
+         <form action="index.html" class="form radius-lg overflow-hidden">
+            <input type="search" placeholder="Enter Keyword" class="border-0 shadow-none pl-3">
+            <button type="submit" class="border-0 shadow-none">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+         </form>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               <div class="header-menu-area d-flex align-items-center pb-lg-2">
-                  <div class="logo">
-                     <a href="index.html">
-                        <img src="./assets/img/logo.svg" alt="logo image">
-                     </a>
-                  </div>
-                  <div class="navbar-parent d-flex justify-content-center">
-                     <ul class="menu align-items-center">
-                        <li class="position-relative has-submenu">
-                           <a href="#">Pages</a>
-                           <ul class="sub-menu">
-                              <li><a href="./product.html">Product Page</a></li>
-                              <li><a href="./product-single.html">Product Single</a></li>
-                              <li><a href="./cart.html">Cart</a></li>
-                              <li><a href="./checkout.html">Checkout</a></li>
-                              <li><a href="./account.html">Account</a></li>
-                              <li><a href="./login.html">Login</a></li>
-                              <li><a href="./registration.html">Registration</a></li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Perfumes</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
 
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Perfumes Oils</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Agarwood</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Dahn al audh</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">gift set</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Sale</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#">Collection</a>
-                           <ul class="mega-menu">
-                              <li class="container">
-                                 <div class="row">
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                       <li><a href="#">items 1</a></li>
-                                    </ul>
-
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-                                    <ul class="col-lg-3">
-                                       <li class="mega-menu-has-image radius-xl overflow-hidden">
-                                          <img class="img-fluid" src="./assets/img/Perfume_1-8.png" alt="perfumes">
-                                          <div><a href="#">Perfume</a></div>
-                                       </li>
-                                    </ul>
-
-                                 </div>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="navbar-last-items d-flex align-items-center">
-
-
-
-
-                     <ul class="d-flex align-items-center m-0 p-0">
-                        <li>
-                           <div class="set-language d-inline-flex align-items-center">
-                              <img src="./assets/img/united_arab_emirates.png" alt="image">
-                              <!-- <span>عربي</span> -->
-                           </div>
-                           <select name="" id="" class="site-language">
-                              <option value="bangla">Bangla</option>
-                              <option value="english" selected>English</option>
-                           </select>
-                        </li>
-                        <li>
-
-                           <a href="#" data-toggle="modal" data-target=".login-popup">
-                              <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                           </a>
-
-                        </li>
-                        <li class="position-relative">
-
-                           <a href="#" data-toggle="modal" data-target="#cartModalOpen">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                           </a>
-                           <label class="shopping-cart-count">11</label>
-                        </li>
-                        <li>
-
-                           <a href="#" data-toggle="modal" data-target="#package">
-                              <i class="fa-solid fa-truck"></i>
-                           </a>
-                        </li>
-                        <li class="d-lg-none">
-                           <button type="button" class="menu-toggle">
-                              <i class="fa-solid fa-bars-staggered"></i>
-                           </button>
-                        </li>
-                     </ul>
-                  </div>
+      <!-- search bar end -->
+      <div class="header-navbar position-relative">
+         <!-- navbar start -->
+         <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="#">
+                     <img src="./assets/img/logo.svg" alt="logo image">
+                  </a>
                </div>
+               <div class="d-none d-lg-flex align-items-center justify-content-center w-100">
+                  <ul class="menu px-lg-4">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Product</a></li>
+                     <li><a href="#">cart</a></li>
+                     <li><a href="#">Checkout</a></li>
+                     <li class="has-submenu">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu border shadow">
+                           <li><a href="./account.html">Account</a></li>
+                           <li><a href="./product.html">Products</a></li>
+                           <li><a href="./product-single.html">Product Single</a></li>
+                           <li><a href="./cart.html">Cart</a></li>
+                           <li><a href="./checkout.html">Checkout</a></li>
+                           <li><a href="./login.html">Login</a></li>
+                           <li><a href="./registration.html">Registretion</a></li>
+                        </ul>
+                     </li>
+                     <li class="has-megamenu">
+                        <a href="#">megamenu</a>
+                        <div class="mega-menu-parent">
+                           <div class="container">
+                              <ul class="mega-menu">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Product</a></li>
+                                 <li><a href="#">cart</a></li>
+                                 <li><a href="#">Checkout</a></li>
+                              </ul>
+                              <ul class="mega-menu">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Product</a></li>
+                                 <li><a href="#">cart</a></li>
+                                 <li><a href="#">Checkout</a></li>
+                              </ul>
+                              <ul class="mega-menu">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Product</a></li>
+                                 <li><a href="#">cart</a></li>
+                                 <li><a href="#">Checkout</a></li>
+                              </ul>
+                              <ul class="mega-menu">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Product</a></li>
+                                 <li><a href="#">cart</a></li>
+                                 <li><a href="#">Checkout</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- menu last items -->
+               <ul class="menu-last-items d-flex align-items-center justify-content-end">
+                  <li>
+                     <a href="#" data-toggle="modal" data-target=".login-popup">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                     </a>
+                  </li>
+                  <li class="position-relative">
+                     <a href="#" data-toggle="modal" data-target="#cartModalOpen">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                     </a>
+                     <label class="shopping-cart-count">11</label>
+                  </li>
+                  <li>
+                     <a href="#" data-toggle="modal" data-target="#package">
+                        <i class="fa-solid fa-truck"></i>
+                     </a>
+                  </li>
+                  <li class="d-lg-none">
+                     <button type="button" class="menu-toggle">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                     </button>
+                  </li>
+               </ul>
+
             </div>
          </div>
+         <!-- navbar end -->
+
+         <!-- mobile menu -->
+         <div class="d-lg-none py-2" id="mobile-menu1">
+            <div class="container">
+               <div class="mobile-menu-parent"></div>
+            </div>
+         </div>
+         <!-- end mobile menu -->
       </div>
-
-      <!-- mobile menu -->
-      <div class="container d-lg-none">
-         <div id="mobile-menu" class="py-3"></div>
-      </div>
-
-
       <!-- modal section -->
 
       <!-- login modal section -->
@@ -513,7 +284,6 @@
          </div>
       </div>
       <!-- modal section end -->
-
 
    </header>
    <!-- end header section  -->
@@ -663,46 +433,18 @@
 
 
 
-   <!-- start footer section -->
+   <footer class="footer-area clearfix pt-5">
 
-   <footer class="footer-area clearfix">
-      <!-- footer subscriptions form -->
-      <div class="footer-subscription">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-12">
-                  <h3 class="newslatter-title text-center pt-5">Newsletter and promotions</h3>
-                  <p class="newslatter-subtitle text-center">Sign up to receive our latest news</p>
-                  <div class="footerTop_form">
-                     <form>
-                        <div class="d-flex align-items-center newslatter">
-                           <input class="form-control" name="email" type="email" placeholder="Email">
-                           <button class="btn" type="button">
-                              <i class="fa-solid fa-arrow-right-long"></i>
-                           </button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
+      <div class="footer-widget1">
 
-            </div>
-         </div>
-      </div>
-
-      <!-- footer widget area -->
-      <div class="footer-widget">
-
-         <a class="whats-app" href="#">
+         <a class="whats-app" href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi, Rubel!" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
          </a>
 
-
-
-
          <div class="container">
             <div class="row">
-               <div class="col-md-6 col-lg-4">
-                  <div class="widget-items mb-2">
+               <div class="col-sm-6 col-lg-3 order-sm-3 order-lg-0">
+                  <div class="widget-items mb-5">
                      <div class="text-center text-md-left info-address">
                         <a href="#">
                            <img src="https://en-ae.ajmal.com/media/wysiwyg/logo.png" alt="logo">
@@ -715,53 +457,67 @@
                         </p>
                      </div>
                   </div>
-
                </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="widget-items mb-2">
-                     <h3 class="widget-title text-center text-md-left">Customer Service</h3>
-                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <ul class="list-unstyled mr-3 mr-md-4 mr-mgl-5">
-                           <li class="text-center text-md-left"><a href="/shipping-returns">Shipping &amp;
-                                 Returns</a></li>
-                           <li class="text-center text-md-left"><a href="/terms-and-conditions">Terms &amp;
-                                 Condition</a></li>
-                           <li class="text-center text-md-left"><a href="/store">Store Locator</a></li>
-                           <li class="text-center text-md-left"><a href="/faqs">FAQs</a></li>
-                           <li class="text-center text-md-left"><a href="/contact-us">Contact Us</a></li>
-                        </ul>
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-5">
+                     <div class="text-center text-sm-left">
+                        <h2 class="footer-widget-title text-capitalize">Our Services</h2>
                      </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="widget-items mb-2">
-                     <h3 class="widget-title text-center text-md-left">Other</h3>
-                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <ul class="list-unstyled mr-3 mr-md-4 mr-mgl-5">
-                           <li class="text-center text-md-left"><a href="/e-gift-card">E-gift card</a></li>
-                           <li class="text-center text-md-left"><a href="/promotion">Promotions</a></li>
-                           <li class="text-center text-md-left"><a href="/loyalty-program">Loyalty program</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-
-               </div>
-               <div class="col-md-6 col-lg-2">
-                  <div class="widget-items mb-2">
-                     <h3 class="widget-title text-center text-md-left">Links</h3>
-                     <ul class="list-unstyled">
-                        <li class="text-center text-md-left"><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li class="text-center text-md-left"><a href="/brand">About us</a></li>
+                     <ul class="p-0 m-0">
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Email Marketing</a></li>
                      </ul>
                   </div>
+               </div>
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-5">
+                     <div class="text-center text-sm-left">
+                        <h2 class="footer-widget-title text-capitalize">quick links</h2>
+                     </div>
+                     <ul class="p-0 m-0">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">FAQ</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-lg-2 order-2">
+                  <div class="widget-items mb-5">
+                     <div class="text-center text-sm-left">
+                        <h2 class="footer-widget-title text-capitalize">Privacy Policy</h2>
+                     </div>
+                     <ul class="p-0 m-0">
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="cookies-policy.html">Cookies Policy</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3 order-sm-3">
+                  <div class="widget-items mb-5">
+                     <div class="text-center">
+                        <h2 class="footer-widget-title text-capitalize">newsletter</h2>
+                        <p class="fz-12">Subscribe our Newsletter to get our latest update and news</p>
+                     </div>
 
-
+                     <form action="#" class="d-flex align-items-center subscribe-form1 justify-content-center my-4">
+                        <input type="email" placeholder="Email Address" class="border shadow-none">
+                        <button type="submit" class="btn border-0 shadow-none">
+                           <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                     </form>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-
 
 
       <div class="bottom">
@@ -796,7 +552,7 @@
                </div>
                <div class="col-md-4">
                   <div class="text-center text-md-right py-3">
-                     <div class="d-inline-flex align-items-center">
+                     <div class="d-inline-flex align-items-center img-aspect-ratio">
                         <a href="#" class="mr-2">
                            <img src="./assets/img/app-store.svg" alt="app-store" class="img-fluid">
                         </a>
