@@ -569,39 +569,41 @@
                         </p>
                      </div>
                      <div id="accountDetails" class="tab-pane fade">
-                        <form class="row" action="./account.html" method="post">
+                        <div class="row">
                            <div class="col-lg-6 mb-2">
                               <h2 class="responsive-title text-capitalize my-3">
                                  <i class="fa-regular fa-user"></i>
                                  Account details
                               </h2>
-                              <div class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg">
+                              <form class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg" action="./account.html"
+                                 method="post">
                                  <label for="fname">First Name</label>
                                  <input type="text" class="form-control radius-lg mb-3" id="fname">
                                  <label for="lname">Last Name</label>
                                  <input type="text" class="form-control radius-lg mb-3" id="lname">
                                  <label for="email">Email Address</label>
                                  <input type="email" class="form-control radius-lg mb-3" id="email">
-                              </div>
+                                 <input type="submit" value="Save Changes" class="btn btn-theme px-3 mb-3">
+                              </form>
                            </div>
                            <div class="col-lg-6 mb-2">
                               <h2 class="responsive-title text-capitalize my-3">
                                  <i class="fa-solid fa-key"></i>
                                  change password
                               </h2>
-                              <div class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg">
+                              <form class="border px-5 px-sm-4 px-lg-5 py-3 shadow radius-lg" action="./account.html"
+                                 method="post">
                                  <label for="old-pwd">Old Password</label>
                                  <input type="password" class="form-control radius-lg mb-3" id="old-pwd">
                                  <label for="new-pwd">New Password</label>
                                  <input type="password" class="form-control radius-lg mb-3" id="new-pwd">
                                  <label for="cm-pwd">Confirm Password</label>
                                  <input type="password" class="form-control radius-lg mb-3" id="cm-pwd">
-                              </div>
+                                 <input type="submit" value="Save Changes" class="btn btn-theme px-3 mb-3">
+                              </form>
                            </div>
-                           <div class="col-12">
-                              <button class="btn btn-theme px-5 py-2 mt-3" type="button">Save Changes</button>
-                           </div>
-                        </form>
+
+                        </div>
                      </div>
                   </div>
                </div>
