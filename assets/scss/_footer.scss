@@ -1,4 +1,6 @@
 .footer-area {
+
+    .live-chat,
     .whats-app {
         position: fixed;
         display: inline-flex;
@@ -11,8 +13,85 @@
         border-radius: 50%;
         background: #16BE45;
         bottom: 80px;
-        right: 10px;
+        left: 10px;
         z-index: 99999;
+
+        i {
+            color: var(--base-white) !important;
+        }
+    }
+
+    .live-chat {
+        left: auto !important;
+        right: 10px !important;
+
+        .chat-box {
+            position: absolute;
+            display: none;
+            bottom: 100%;
+            right: 100%;
+            z-index: 1030;
+            background-color: white !important;
+            font-size: 15px;
+            color: var(--body-color);
+            width: 300px;
+            border-radius: 20px;
+            padding: 20px;
+            cursor: text !important;
+
+            &.show {
+                display: block;
+                animation: fadeInChatBox 0.3s ease-in-out;
+            }
+
+            &.hide {
+                display: block;
+                animation: fadeInChatBox 0.3s ease-in-out reverse;
+            }
+
+            .close-chatbox {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 30px;
+                width: 30px;
+                border: none;
+                outline: 0;
+                background-color: var(--base-red);
+                border-radius: 20px;
+                color: var(--body-color) !important;
+
+
+            }
+
+            .body {
+                .message {
+                    span {
+                        display: flex !important;
+                        align-items: center;
+                        padding: 5px 10px;
+                        background-color: #dee2e6;
+                        border-radius: 10px;
+                        font-size: 13px;
+                        margin-bottom: 15px;
+                    }
+
+                }
+
+                .sent {
+                    background: var(--base-skin);
+
+                    input {
+                        border-radius: 15px 0 0 15px;
+                    }
+
+                    button {
+                        background: var(--base-header-bg);
+                        border-radius: 0 15px 15px 0;
+                    }
+                }
+            }
+        }
     }
 
     background-color: var(--base-skin-alpha);
@@ -188,5 +267,19 @@
         aspect-ratio: 3/2;
         width: 100%;
         object-fit: contain;
+    }
+}
+
+@keyframes fadeInChatBox {
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 0.1);
+        transform-origin: bottom right 0px;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right auto;
     }
 }

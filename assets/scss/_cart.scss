@@ -134,15 +134,17 @@
 }
 
 .increse_decrese {
-    display: flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--base-border);
+    border-radius: 10px;
+    overflow: hidden;
 
     input {
         height: 30px;
         width: 40px;
         text-align: center;
+        background: #c3cfd4;
     }
 
     input[type="number"]::-webkit-inner-spin-button,

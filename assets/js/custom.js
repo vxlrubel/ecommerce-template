@@ -7,6 +7,7 @@
             this.cartItemRemove();
             this.searchToggle();
             this.header1();
+            this.footer();
         }
 
         /**
@@ -176,16 +177,40 @@
                 });
             }
 
+
             toggleMobileMenu();
             duplicateNavbar();
             addToggleClass();
             toggleSubmenu();
             scrollingFixed();
         }
+
+        footer() {
+            const chatbox = () => {
+                $('.live-chat').on('click', function (e) {
+                    var chatBox = $('.chat-box');
+                    e.preventDefault();
+                    chatBox.toggleClass('show');
+                });
+                $('.close-chatbox').on('click', function () {
+                    $(this).parent('.chat-box').fadeOut();
+                })
+            }
+            // chatbox();
+        }
     }
 
     $(document).ready(function () {
         const ecom = new Ecommerce();
         ecom.init();
+
+        $('.live-chat').on('click', function (e) {
+            var chatBox = $('.chat-box');
+            e.preventDefault();
+            chatBox.addClass('show');
+        });
+        $('.close-chatbox').on('click', function () {
+            $(this).parent('.chat-box').fadeOut();
+        })
     });
 })(jQuery);
